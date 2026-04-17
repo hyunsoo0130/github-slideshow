@@ -23,12 +23,12 @@
   <text x="60" y="116" fill="#fecaca" font-size="9" text-anchor="middle">2x / week</text>
 
   <rect x="128" y="80" width="104" height="42" rx="4" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="180" y="96" fill="#64748b" font-size="8" text-anchor="middle">✅ Published</text>
+  <text x="180" y="96" fill="#64748b" font-size="8" text-anchor="middle">✓ Published</text>
   <text x="180" y="108" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">AI Tools in 2026</text>
   <text x="180" y="118" fill="#94a3b8" font-size="8" text-anchor="middle">12:42  •  18K views</text>
 
   <rect x="348" y="80" width="104" height="42" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
-  <text x="400" y="96" fill="#92400e" font-size="8" text-anchor="middle">🎬 Editing</text>
+  <text x="400" y="96" fill="#92400e" font-size="8" text-anchor="middle">► Editing</text>
   <text x="400" y="108" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">Midjourney Tips</text>
   <text x="400" y="118" fill="#94a3b8" font-size="8" text-anchor="middle">Target: Apr 19</text>
 
@@ -39,12 +39,12 @@
   <text x="60" y="166" fill="#e9d5ff" font-size="9" text-anchor="middle">Daily</text>
 
   <rect x="128" y="130" width="104" height="42" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
-  <text x="180" y="146" fill="#15803d" font-size="8" text-anchor="middle">✅ Posted</text>
+  <text x="180" y="146" fill="#15803d" font-size="8" text-anchor="middle">✓ Posted</text>
   <text x="180" y="158" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">Setup Desk Tour</text>
   <text x="180" y="168" fill="#94a3b8" font-size="8" text-anchor="middle">4.2K likes</text>
 
   <rect x="238" y="130" width="104" height="42" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
-  <text x="290" y="146" fill="#15803d" font-size="8" text-anchor="middle">✅ Posted</text>
+  <text x="290" y="146" fill="#15803d" font-size="8" text-anchor="middle">✓ Posted</text>
   <text x="290" y="158" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">Productivity Tips</text>
   <text x="290" y="168" fill="#94a3b8" font-size="8" text-anchor="middle">3.8K likes</text>
 
@@ -60,12 +60,12 @@
   <text x="60" y="216" fill="#ccfbf1" font-size="9" text-anchor="middle">3x / week</text>
 
   <rect x="238" y="180" width="104" height="42" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
-  <text x="290" y="196" fill="#15803d" font-size="8" text-anchor="middle">✅ Posted</text>
+  <text x="290" y="196" fill="#15803d" font-size="8" text-anchor="middle">✓ Posted</text>
   <text x="290" y="208" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">60s AI Tutorial</text>
   <text x="290" y="218" fill="#94a3b8" font-size="8" text-anchor="middle">84K plays</text>
 
   <rect x="568" y="180" width="104" height="42" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
-  <text x="620" y="196" fill="#92400e" font-size="8" text-anchor="middle">🎬 Filming</text>
+  <text x="620" y="196" fill="#92400e" font-size="8" text-anchor="middle">► Filming</text>
   <text x="620" y="208" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">Trend Challenge</text>
   <text x="620" y="218" fill="#94a3b8" font-size="8" text-anchor="middle">Film: Today</text>
 
@@ -90,7 +90,7 @@
   <text x="482" y="328" fill="#22c55e" font-size="9" text-anchor="middle">▲ +44% vs last month</text>
 
   <rect x="580" y="268" width="204" height="68" rx="6" fill="#0f172a"/>
-  <text x="682" y="288" fill="#94a3b8" font-size="9" text-anchor="middle">💰 Monthly Revenue</text>
+  <text x="682" y="288" fill="#94a3b8" font-size="9" text-anchor="middle">■ Monthly Revenue</text>
   <text x="682" y="312" fill="#34d399" font-size="22" font-weight="bold" text-anchor="middle">$2,840</text>
   <text x="682" y="328" fill="#22c55e" font-size="9" text-anchor="middle">AdSense + Brand Deals</text>
 

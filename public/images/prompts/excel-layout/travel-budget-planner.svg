@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI', Arial, sans-serif">
   <rect width="800" height="420" fill="#f8fafc"/>
   <rect width="800" height="50" fill="#0369a1"/>
-  <text x="20" y="22" fill="#e0f2fe" font-size="12" font-weight="bold">✈ Travel Budget Planner — Tokyo, Japan (7 Days)</text>
+  <text x="20" y="22" fill="#e0f2fe" font-size="12" font-weight="bold">Travel Budget Planner — Tokyo, Japan (7 Days)</text>
   <text x="20" y="42" fill="#bae6fd" font-size="11">Base Currency: USD  |  Dest: JPY  |  Live Rate: =GOOGLEFINANCE("CURRENCY:USDJPY") → 151.23</text>
 
   <!-- Trip info bar -->
@@ -21,7 +21,7 @@
 
   <!-- Rows -->
   <rect y="112" width="800" height="24" fill="#eff6ff"/>
-  <text x="16" y="128" fill="#1d4ed8" font-size="10" font-weight="bold">✈ FLIGHTS</text>
+  <text x="16" y="128" fill="#1d4ed8" font-size="10" font-weight="bold">► FLIGHTS</text>
   <text x="230" y="128" fill="#1e293b" font-size="10">Round-trip airfare (×2)</text>
   <text x="390" y="128" fill="#1e293b" font-size="10">$1,200.00</text>
   <text x="490" y="128" fill="#64748b" font-size="10">¥181,476</text>
@@ -37,7 +37,7 @@
   <text x="700" y="152" fill="#ef4444" font-size="10">-$26</text>
 
   <rect y="160" width="800" height="24" fill="#eff6ff"/>
-  <text x="16" y="176" fill="#065f46" font-size="10" font-weight="bold">🚗 TRANSPORTATION</text>
+  <text x="16" y="176" fill="#065f46" font-size="10" font-weight="bold">■ TRANSPORTATION</text>
   <text x="230" y="176" fill="#1e293b" font-size="10">IC Card + Train passes</text>
   <text x="390" y="176" fill="#1e293b" font-size="10">$180.00</text>
   <text x="490" y="176" fill="#64748b" font-size="10">¥27,221</text>
@@ -45,7 +45,7 @@
   <text x="700" y="176" fill="#22c55e" font-size="10">+$21</text>
 
   <rect y="184" width="800" height="24" fill="#fff"/>
-  <text x="16" y="200" fill="#92400e" font-size="10" font-weight="bold">🍜 FOOD &amp; DRINK</text>
+  <text x="16" y="200" fill="#92400e" font-size="10" font-weight="bold">■ FOOD &amp; DRINK</text>
   <text x="230" y="200" fill="#1e293b" font-size="10">All meals (7 days × 2 ppl)</text>
   <text x="390" y="200" fill="#1e293b" font-size="10">$560.00</text>
   <text x="490" y="200" fill="#64748b" font-size="10">¥84,689</text>

@@ -19,7 +19,7 @@
 
   <!-- Row 1 -->
   <rect y="74" width="800" height="26" fill="#fff"/>
-  <text x="16" y="91" fill="#1e293b" font-size="10">📋 Requirements</text>
+  <text x="16" y="91" fill="#1e293b" font-size="10">■ Requirements</text>
   <text x="180" y="91" fill="#64748b" font-size="10">Alice</text>
   <rect x="248" y="79" width="118" height="14" rx="4" fill="#0d9488"/>
   <text x="307" y="90" fill="#fff" font-size="8" text-anchor="middle">✓ Done</text>
@@ -28,7 +28,7 @@
 
   <!-- Row 2 -->
   <rect y="100" width="800" height="26" fill="#f8fafc"/>
-  <text x="16" y="117" fill="#1e293b" font-size="10">🎨 UI Design</text>
+  <text x="16" y="117" fill="#1e293b" font-size="10">■ UI Design</text>
   <text x="180" y="117" fill="#64748b" font-size="10">Bob</text>
   <rect x="308" y="105" width="118" height="14" rx="4" fill="#0d9488"/>
   <text x="367" y="116" fill="#fff" font-size="8" text-anchor="middle">✓ Done</text>
@@ -37,7 +37,7 @@
 
   <!-- Row 3 -->
   <rect y="126" width="800" height="26" fill="#fff"/>
-  <text x="16" y="143" fill="#1e293b" font-size="10">⚙️ Backend API</text>
+  <text x="16" y="143" fill="#1e293b" font-size="10">■ Backend API</text>
   <text x="180" y="143" fill="#64748b" font-size="10">Charlie</text>
   <rect x="368" y="131" width="178" height="14" rx="4" fill="#f59e0b"/>
   <text x="457" y="142" fill="#fff" font-size="8" text-anchor="middle">▶ In Progress (65%)</text>
@@ -46,7 +46,7 @@
 
   <!-- Row 4 -->
   <rect y="152" width="800" height="26" fill="#f8fafc"/>
-  <text x="16" y="169" fill="#1e293b" font-size="10">🗄️ Database Setup</text>
+  <text x="16" y="169" fill="#1e293b" font-size="10">■ Database Setup</text>
   <text x="180" y="169" fill="#64748b" font-size="10">Diana</text>
   <rect x="368" y="157" width="118" height="14" rx="4" fill="#22c55e"/>
   <text x="427" y="168" fill="#fff" font-size="8" text-anchor="middle">✓ Done</text>
@@ -55,7 +55,7 @@
 
   <!-- Row 5 -->
   <rect y="178" width="800" height="26" fill="#fff"/>
-  <text x="16" y="195" fill="#1e293b" font-size="10">🔗 Integration</text>
+  <text x="16" y="195" fill="#1e293b" font-size="10">■ Integration</text>
   <text x="180" y="195" fill="#64748b" font-size="10">Charlie</text>
   <rect x="488" y="183" width="118" height="14" rx="4" fill="#6366f1"/>
   <text x="547" y="194" fill="#fff" font-size="8" text-anchor="middle">Scheduled</text>
@@ -64,7 +64,7 @@
 
   <!-- Row 6 -->
   <rect y="204" width="800" height="26" fill="#f8fafc"/>
-  <text x="16" y="221" fill="#1e293b" font-size="10">🧪 QA Testing</text>
+  <text x="16" y="221" fill="#1e293b" font-size="10">■ QA Testing</text>
   <text x="180" y="221" fill="#64748b" font-size="10">Eve</text>
   <rect x="548" y="209" width="118" height="14" rx="4" fill="#6366f1"/>
   <text x="607" y="220" fill="#fff" font-size="8" text-anchor="middle">Scheduled</text>
@@ -73,7 +73,7 @@
 
   <!-- Row 7 -->
   <rect y="230" width="800" height="26" fill="#fff"/>
-  <text x="16" y="247" fill="#1e293b" font-size="10">🚀 Deployment</text>
+  <text x="16" y="247" fill="#1e293b" font-size="10">■ Deployment</text>
   <text x="180" y="247" fill="#64748b" font-size="10">Alice</text>
   <rect x="608" y="235" width="58" height="14" rx="4" fill="#dc2626"/>
   <text x="637" y="246" fill="#fff" font-size="8" text-anchor="middle">Pending</text>
@@ -82,7 +82,7 @@
 
   <!-- Row 8 -->
   <rect y="256" width="800" height="26" fill="#f8fafc"/>
-  <text x="16" y="273" fill="#1e293b" font-size="10">📊 Review &amp; Retro</text>
+  <text x="16" y="273" fill="#1e293b" font-size="10">■ Review &amp; Retro</text>
   <text x="180" y="273" fill="#64748b" font-size="10">All</text>
   <rect x="608" y="261" width="58" height="14" rx="4" fill="#94a3b8"/>
   <text x="637" y="272" fill="#fff" font-size="8" text-anchor="middle">Pending</text>

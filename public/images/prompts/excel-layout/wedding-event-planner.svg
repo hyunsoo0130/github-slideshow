@@ -24,13 +24,13 @@
   <text x="280" y="106" fill="#22c55e" font-size="10">$8,200 ✓</text>
 
   <rect y="112" width="340" height="20" fill="#fdf2f8"/>
-  <text x="14" y="126" fill="#1e293b" font-size="10">📸 Photography &amp; Video</text>
+  <text x="14" y="126" fill="#1e293b" font-size="10">Photography &amp; Video</text>
   <text x="170" y="126" fill="#1e293b" font-size="10">$3,360</text>
   <text x="220" y="126" fill="#1e293b" font-size="10">$3,200</text>
   <text x="280" y="126" fill="#22c55e" font-size="10">$1,600 ✓</text>
 
   <rect y="132" width="340" height="20" fill="#fff"/>
-  <text x="14" y="146" fill="#1e293b" font-size="10">🎵 Music &amp; Entertainment</text>
+  <text x="14" y="146" fill="#1e293b" font-size="10">Music &amp; Entertainment</text>
   <text x="170" y="146" fill="#1e293b" font-size="10">$2,240</text>
   <text x="220" y="146" fill="#1e293b" font-size="10">$2,400</text>
   <text x="280" y="146" fill="#f59e0b" font-size="10">$800</text>
@@ -42,7 +42,7 @@
   <text x="280" y="166" fill="#ef4444" font-size="10">$0 !</text>
 
   <rect y="172" width="340" height="20" fill="#fff"/>
-  <text x="14" y="186" fill="#1e293b" font-size="10">🍽 Catering &amp; Cake</text>
+  <text x="14" y="186" fill="#1e293b" font-size="10">Catering &amp; Cake</text>
   <text x="170" y="186" fill="#1e293b" font-size="10">$9,800</text>
   <text x="220" y="186" fill="#1e293b" font-size="10">$9,800</text>
   <text x="280" y="186" fill="#22c55e" font-size="10">$4,900 ✓</text>
@@ -60,7 +60,7 @@
   <text x="280" y="226" fill="#22c55e" font-size="10">$2,100 ✓</text>
 
   <rect y="232" width="340" height="20" fill="#fdf2f8"/>
-  <text x="14" y="246" fill="#1e293b" font-size="10">💰 Contingency (5%)</text>
+  <text x="14" y="246" fill="#1e293b" font-size="10">Contingency (5%)</text>
   <text x="170" y="246" fill="#1e293b" font-size="10">$1,400</text>
   <text x="220" y="246" fill="#94a3b8" font-size="10">—</text>
   <text x="280" y="246" fill="#94a3b8" font-size="10">—</text>

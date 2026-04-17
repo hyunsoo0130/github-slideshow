@@ -7,7 +7,7 @@
   <!-- KPI grid 2x2 -->
   <rect y="46" width="400" height="100" fill="#ede9fe"/>
   <rect y="46" width="400" height="28" fill="#6d28d9"/>
-  <text x="16" y="65" fill="#ddd6fe" font-size="11" font-weight="bold">📈 REVENUE</text>
+  <text x="16" y="65" fill="#ddd6fe" font-size="11" font-weight="bold">▲ REVENUE</text>
   <text x="16" y="95" fill="#4c1d95" font-size="12">Monthly Recurring Revenue</text>
   <text x="16" y="115" fill="#7c3aed" font-size="22" font-weight="bold">$284,500</text>
   <text x="220" y="115" fill="#22c55e" font-size="11">▲ +8.2% MoM</text>
@@ -17,7 +17,7 @@
 
   <rect x="400" y="46" width="400" height="100" fill="#ecfdf5"/>
   <rect x="400" y="46" width="400" height="28" fill="#15803d"/>
-  <text x="416" y="65" fill="#bbf7d0" font-size="11" font-weight="bold">👥 CUSTOMER</text>
+  <text x="416" y="65" fill="#bbf7d0" font-size="11" font-weight="bold">◆ CUSTOMER</text>
   <text x="416" y="95" fill="#064e3b" font-size="12">Customer Acquisition Cost</text>
   <text x="416" y="115" fill="#15803d" font-size="22" font-weight="bold">$142</text>
   <text x="530" y="115" fill="#22c55e" font-size="11">▼ -$18 (good!)</text>
@@ -27,7 +27,7 @@
 
   <rect y="146" width="400" height="100" fill="#eff6ff"/>
   <rect y="146" width="400" height="28" fill="#1d4ed8"/>
-  <text x="16" y="165" fill="#bfdbfe" font-size="11" font-weight="bold">🔄 OPERATIONS</text>
+  <text x="16" y="165" fill="#bfdbfe" font-size="11" font-weight="bold">► OPERATIONS</text>
   <text x="16" y="195" fill="#1e3a8a" font-size="12">Customer Churn Rate</text>
   <text x="16" y="215" fill="#1d4ed8" font-size="22" font-weight="bold">2.4%</text>
   <text x="130" y="215" fill="#22c55e" font-size="11">▼ Better (was 3.1%)</text>
@@ -37,7 +37,7 @@
 
   <rect x="400" y="146" width="400" height="100" fill="#fff7ed"/>
   <rect x="400" y="146" width="400" height="28" fill="#c2410c"/>
-  <text x="416" y="165" fill="#fed7aa" font-size="11" font-weight="bold">⭐ SATISFACTION</text>
+  <text x="416" y="165" fill="#fed7aa" font-size="11" font-weight="bold">★ SATISFACTION</text>
   <text x="416" y="195" fill="#7c2d12" font-size="12">Net Promoter Score (NPS)</text>
   <text x="416" y="215" fill="#c2410c" font-size="22" font-weight="bold">67</text>
   <text x="490" y="215" fill="#f59e0b" font-size="11">→ Stable (+2 pts)</text>

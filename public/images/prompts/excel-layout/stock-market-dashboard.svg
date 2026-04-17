@@ -45,7 +45,7 @@
 
   <!-- Finance sector -->
   <rect x="8" y="192" width="384" height="18" rx="2" fill="#1a2f23"/>
-  <text x="14" y="205" fill="#3fb950" font-size="9" font-weight="bold">💰 FINANCE</text>
+  <text x="14" y="205" fill="#3fb950" font-size="9" font-weight="bold">◆ FINANCE</text>
   <g font-size="9">
     <text x="14" y="218" fill="#8b949e">JPM</text><text x="60" y="218" fill="#c9d1d9">$196.42</text><text x="120" y="218" fill="#3fb950">▲ +0.92%</text>
     <text x="200" y="218" fill="#8b949e">GS</text><text x="246" y="218" fill="#c9d1d9">$458.18</text><text x="306" y="218" fill="#3fb950">▲ +0.61%</text>
@@ -62,7 +62,7 @@
   <text x="622" y="90" fill="#3fb950" font-size="10">▲ +0.44%</text>
 
   <rect x="408" y="100" width="384" height="18" rx="2" fill="#1f2937"/>
-  <text x="414" y="113" fill="#f87171" font-size="9" font-weight="bold">🚗 AUTO &amp; TECH</text>
+  <text x="414" y="113" fill="#f87171" font-size="9" font-weight="bold">■ AUTO &amp; TECH</text>
   <g font-size="9">
     <text x="414" y="128" fill="#8b949e">TYO:7203</text><text x="488" y="128" fill="#c9d1d9">Toyota</text><text x="580" y="128" fill="#c9d1d9">¥3,842</text><text x="640" y="128" fill="#3fb950">▲ +0.82%</text>
     <text x="414" y="142" fill="#8b949e">TYO:6758</text><text x="488" y="142" fill="#c9d1d9">Sony</text><text x="580" y="142" fill="#c9d1d9">¥12,845</text><text x="640" y="142" fill="#f85149">▼ -0.54%</text>

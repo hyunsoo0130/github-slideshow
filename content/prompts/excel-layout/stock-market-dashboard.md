@@ -175,6 +175,56 @@ promptText: |
   and conditional formatting for gains (green) and losses (red).
   Make sure every Live Price cell has =IFERROR(GOOGLEFINANCE(ticker,"price"),"—") formula.
 
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  DESIGN & VISUAL FORMATTING STANDARDS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Apply these exact styles so the sheet looks like a professional dashboard:
+
+  COLOR PALETTE:
+  ▸ Title header row:       Background #0d1117, text #FFFFFF, Bold 12pt, row height 36
+  ▸ Section header rows:    Background #161b22, text #FFFFFF, Bold 11pt, row height 28
+  ▸ Column label headers:   Background #1E293B, text #94A3B8, Bold 10pt
+  ▸ Data rows (alternating): #F8FAFC (odd rows) / #FFFFFF (even rows), text #1E293B, 10pt
+  ▸ Grand total / summary:  Background #F1F5F9, Bold, thick top border #161b22
+  ▸ Footer / notes row:     Background #0F172A, text #475569, 9pt
+
+  STATUS & CONDITIONAL COLORS:
+  ▸ Done / On Track / Positive:  text #16A34A, cell fill #DCFCE7
+  ▸ In Progress / Warning:       text #D97706, cell fill #FEF3C7
+  ▸ At Risk / Overdue / Negative: text #DC2626, cell fill #FEE2E2
+  ▸ Planned / Neutral:           text #4F46E5, cell fill #E0E7FF
+  ▸ Highlight accent color:      #3b82f6
+
+  FONTS & SIZES:
+  ▸ Font: Calibri (Excel) or Arial (Google Sheets)
+  ▸ Title: Bold 14pt | Section headers: Bold 11pt | Data: 10pt | Notes: 9pt gray
+
+  BORDERS:
+  ▸ Data cells: thin border, color #E2E8F0
+  ▸ Between sections: medium border, color #CBD5E1
+  ▸ Key metric / total rows: thick top border, color #161b22
+
+  COLUMN WIDTHS:
+  ▸ Text/label columns: 180–220px (auto-fit)
+  ▸ Number/metric columns: 90–110px
+  ▸ Status columns: 80–100px
+  ▸ Date columns: 100px
+
+  NUMBER & DATE FORMATS:
+  ▸ Currency: $#,##0.00 (or local equivalent)
+  ▸ Large currency: $#,##0
+  ▸ Percentages: 0.0%
+  ▸ Counts/integers: #,##0
+  ▸ Dates: mmm dd, yyyy
+
+  FINISHING TOUCHES:
+  ▸ Freeze the top header row (View → Freeze Top Row)
+  ▸ Apply AutoFilter to the main data table header row
+  ▸ Hide gridlines (View → uncheck Gridlines) for a clean dashboard look
+  ▸ Set sheet tab color to #161b22
+  ▸ Add a print area covering the main visible range
+
 usage: |
   1. Open a new Google Sheets (GOOGLEFINANCE only works in Google Sheets)
   2. Paste into Claude — Claude returns formula-by-formula setup instructions
