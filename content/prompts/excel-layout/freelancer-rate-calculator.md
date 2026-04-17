@@ -40,11 +40,11 @@ promptText: |
   - Self-Employment Tax (15.3% on net)
 
   TOTALS (Row 16–22):
-  Annual Personal Expenses: =SUM(C)
-  Annual Business Expenses: =SUM(C business)
-  Annual Tax Reserve: =SUM(C taxes)
-  Total Annual Need: =above sums
-  Monthly Need: =Annual/12
+  A16: "Annual Personal Expenses:" | C16: =SUM(C2:C8)*12
+  A17: "Annual Business Expenses:" | C17: =SUM(C9:C14)*12
+  A18: "Annual Tax Reserve:"       | C18: =SUM(C15:C15)*12
+  A19: "Total Annual Need:"        | C19: =C16+C17+C18
+  A20: "Monthly Need:"             | C20: =C19/12
 
   MINIMUM VIABLE RATE CALCULATOR (Rows 24–35):
   A24: "Billable Hours per Week" | B24: [BILLABLE_HOURS] (realistically 20–30)
@@ -53,11 +53,11 @@ promptText: |
   A27: "Non-Billable Time % (admin, marketing, learning)" | B27: [OVERHEAD_%]
   A28: "Total Hours Worked Annually" | B28: =B26/(1-B27)
   A29: "Desired Annual Profit (above expenses)" | B29: [PROFIT_GOAL]
-  A30: "Minimum Required Revenue" | B30: =TotalAnnualNeed+B29
+  A30: "Minimum Required Revenue" | B30: =C19+B29
   A31: "MINIMUM HOURLY RATE" | B31: =B30/B26 — bold, highlighted cell
 
   RATE TIERS:
-  A33: "Survival Rate (break-even)" | B33: =TotalAnnualNeed/B26
+  A33: "Survival Rate (break-even)" | B33: =C19/B26
   A34: "Comfortable Rate (+ 20% profit)" | B34: =B33*1.2
   A35: "Growth Rate (+ 50% profit)" | B35: =B33*1.5
   A36: "Market Rate (+ 100% profit)" | B36: =B33*2

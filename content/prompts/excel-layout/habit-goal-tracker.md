@@ -38,9 +38,13 @@ promptText: |
   AJ4: [max streak formula]
 
   STREAK FORMULA (AI column):
+  Modern Excel 365 / Google Sheets (recommended):
   =LET(data,C4:AF4,n,COLUMNS(data),
    REDUCE(0,SEQUENCE(n,,n,-1),
    LAMBDA(acc,i,IF(INDEX(data,1,i)="✓",acc+1,0))))
+
+  Excel 2019 or older (compatibility fallback — use this if the above returns an error):
+  =IFERROR(MATCH(FALSE,EXACT(IF(OFFSET(C4,0,COLUMNS(C4:AF4)-ROW(INDIRECT("1:"&COLUMNS(C4:AF4))),1,1),"✓",""),{"✓"}),0)-1,COUNTIF(C4:AF4,"✓"))
 
   BOTTOM SUMMARY (Row 15):
   A15: "Daily Completion Score" 

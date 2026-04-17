@@ -128,16 +128,52 @@ promptText: |
   BIDU | Baidu | =GOOGLEFINANCE("BIDU","price") | ...
   NIO | NIO Inc | =GOOGLEFINANCE("NIO","price") | ...
 
-  SHEET 5: PORTFOLIO TRACKER (Optional)
+  SHEET 5: PORTFOLIO TRACKER
 
-  A: Ticker | B: Market | C: Shares Owned | D: Avg Buy Price | E: Current Price (GOOGLEFINANCE)
-  F: Current Value | G: Gain/Loss | H: Gain/Loss % | I: % of Portfolio
+  ⚠️ TICKER FORMAT GUIDE — use GOOGLEFINANCE format, NOT Yahoo Finance format:
+  US stocks  → plain ticker, no prefix: GOOGL, TSLA, AAPL, JPM
+  Japan      → TYO: prefix: TYO:7203 (Toyota), TYO:9984 (SoftBank)
+  Hong Kong  → HKG: prefix: HKG:0700 (Tencent), HKG:9988 (Alibaba HK)
+  Korea      → KRX: prefix: KRX:005930 (Samsung), KRX:000660 (SK Hynix)
+              ❌ Do NOT use Yahoo Finance format (005930.KS) — it will NOT work in GOOGLEFINANCE
 
-  Portfolio total: =SUMPRODUCT(C:C,E:E)
-  Chart: Portfolio allocation pie chart
+  HEADER ROW (Row 1):
+  A1: "Ticker" | B1: "Market" | C1: "Company" | D1: "Shares" | E1: "Avg Buy Price"
+  F1: "Live Price" | G1: "Current Value" | H1: "Gain/Loss ($)" | I1: "Gain/Loss %" | J1: "% of Portfolio"
+
+  EXAMPLE DATA (Rows 2–8):
+  A2: GOOGL   | B2: US | C2: Alphabet Inc        | D2: 3  | E2: $140
+  A3: TSLA    | B3: US | C3: Tesla Inc            | D3: 15 | E3: $220
+  A4: TYO:7203| B4: JP | C4: Toyota Motor         | D4: 20 | E4: ¥2500
+  A5: HKG:0700| B5: HK | C5: Tencent Holdings     | D5: 30 | E5: HK$300
+  A6: BABA    | B6: US | C6: Alibaba ADR (US)      | D6: 12 | E6: $85
+  A7: KRX:005930| B7: KR| C7: Samsung Electronics | D7: 5  | E7: ₩70000
+  A8: JPM     | B8: US | C8: JPMorgan Chase        | D8: 6  | E8: $190
+
+  FORMULAS — enter these in each row (replace 2 with the actual row number):
+  F2 (Live Price):    =IFERROR(GOOGLEFINANCE(A2,"price"),"—")
+  G2 (Current Value): =IFERROR(D2*F2,"—")
+  H2 (Gain/Loss $):   =IFERROR(G2-(D2*E2),"—")
+  I2 (Gain/Loss %):   =IFERROR((F2-E2)/E2,"—")  ← format as percentage
+  J2 (% of Portfolio):=IFERROR(G2/SUM($G$2:$G$50),"—")  ← format as percentage
+
+  Copy these formulas down for all rows (F2:J2 → drag down to F3:J3, F4:J4, etc.)
+
+  TOTALS ROW (below last entry, e.g., Row 10):
+  "TOTAL INVESTED":       =SUMPRODUCT(D2:D9,E2:E9)
+  "TOTAL CURRENT VALUE":  =SUM(G2:G9)
+  "TOTAL GAIN/LOSS ($)":  =SUM(H2:H9)
+  "TOTAL RETURN %":       =(SUM(G2:G9)-SUMPRODUCT(D2:D9,E2:E9))/SUMPRODUCT(D2:D9,E2:E9)
+
+  CONDITIONAL FORMATTING:
+  H column (Gain/Loss $): positive → green fill | negative → red fill
+  I column (Gain/Loss %): >0 → green text | <0 → red text
+
+  PIE CHART: Select J column → Insert pie chart → "Portfolio Allocation by Stock"
 
   Set up this dashboard with all 4 market sheets, sector color coding,
   and conditional formatting for gains (green) and losses (red).
+  Make sure every Live Price cell has =IFERROR(GOOGLEFINANCE(ticker,"price"),"—") formula.
 
 usage: |
   1. Open a new Google Sheets (GOOGLEFINANCE only works in Google Sheets)
