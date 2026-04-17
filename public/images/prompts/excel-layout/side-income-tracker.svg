@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="420" fill="#f8fafc"/>
+  <rect width="800" height="46" fill="#0891b2"/>
+  <text x="20" y="28" fill="#fff" font-size="16" font-weight="bold">Side Income &amp; Hustle Tracker</text>
+  <text x="20" y="42" fill="#a5f3fc" font-size="10">April 2026  |  4 Active Streams  |  Monthly Total: $3,240  |  Blended Rate: $48/hr</text>
+
+  <!-- Streams overview -->
+  <rect y="46" width="800" height="28" fill="#164e63"/>
+  <text x="16" y="65" fill="#67e8f9" font-size="10" font-weight="bold">Stream</text>
+  <text x="200" y="65" fill="#67e8f9" font-size="10" font-weight="bold">Platform</text>
+  <text x="300" y="65" fill="#67e8f9" font-size="10" font-weight="bold">Revenue</text>
+  <text x="380" y="65" fill="#67e8f9" font-size="10" font-weight="bold">Expenses</text>
+  <text x="460" y="65" fill="#67e8f9" font-size="10" font-weight="bold">Net Profit</text>
+  <text x="540" y="65" fill="#67e8f9" font-size="10" font-weight="bold">Hours</text>
+  <text x="610" y="65" fill="#67e8f9" font-size="10" font-weight="bold">$/hr</text>
+  <text x="660" y="65" fill="#67e8f9" font-size="10" font-weight="bold">Goal %</text>
+  <text x="720" y="65" fill="#67e8f9" font-size="10" font-weight="bold">Status</text>
+
+  <!-- Row 1 -->
+  <rect y="74" width="800" height="28" fill="#fff"/>
+  <text x="16" y="92" fill="#1e293b" font-size="11">Fiverr Design</text>
+  <text x="200" y="92" fill="#64748b" font-size="10">Fiverr</text>
+  <text x="300" y="92" fill="#1e293b" font-size="11">$1,240</text>
+  <text x="380" y="92" fill="#64748b" font-size="10">$0</text>
+  <text x="460" y="92" fill="#22c55e" font-size="11" font-weight="bold">$1,240</text>
+  <text x="540" y="92" fill="#64748b" font-size="10">22h</text>
+  <text x="610" y="92" fill="#22c55e" font-size="11">$56</text>
+  <rect x="655" y="78" width="56" height="16" rx="8" fill="#dcfce7"/>
+  <text x="683" y="90" fill="#15803d" font-size="9" text-anchor="middle">124%</text>
+  <rect x="718" y="78" width="64" height="16" rx="8" fill="#dcfce7"/>
+  <text x="750" y="90" fill="#15803d" font-size="9" text-anchor="middle">● Scaling</text>
+
+  <!-- Row 2 -->
+  <rect y="102" width="800" height="28" fill="#f8fafc"/>
+  <text x="16" y="120" fill="#1e293b" font-size="11">Etsy Digital Downloads</text>
+  <text x="200" y="120" fill="#64748b" font-size="10">Etsy</text>
+  <text x="300" y="120" fill="#1e293b" font-size="11">$842</text>
+  <text x="380" y="120" fill="#64748b" font-size="10">$32</text>
+  <text x="460" y="120" fill="#22c55e" font-size="11" font-weight="bold">$810</text>
+  <text x="540" y="120" fill="#64748b" font-size="10">8h</text>
+  <text x="610" y="120" fill="#22c55e" font-size="11">$101</text>
+  <rect x="655" y="106" width="56" height="16" rx="8" fill="#dcfce7"/>
+  <text x="683" y="118" fill="#15803d" font-size="9" text-anchor="middle">168%</text>
+  <rect x="718" y="106" width="64" height="16" rx="8" fill="#dbeafe"/>
+  <text x="750" y="118" fill="#1d4ed8" font-size="9" text-anchor="middle">● Passive</text>
+
+  <!-- Row 3 -->
+  <rect y="130" width="800" height="28" fill="#fff"/>
+  <text x="16" y="148" fill="#1e293b" font-size="11">YouTube AdSense</text>
+  <text x="200" y="148" fill="#64748b" font-size="10">YouTube</text>
+  <text x="300" y="148" fill="#1e293b" font-size="11">$684</text>
+  <text x="380" y="148" fill="#64748b" font-size="10">$24</text>
+  <text x="460" y="148" fill="#22c55e" font-size="11" font-weight="bold">$660</text>
+  <text x="540" y="148" fill="#64748b" font-size="10">18h</text>
+  <text x="610" y="148" fill="#f59e0b" font-size="11">$37</text>
+  <rect x="655" y="134" width="56" height="16" rx="8" fill="#fef9c3"/>
+  <text x="683" y="146" fill="#92400e" font-size="9" text-anchor="middle">91%</text>
+  <rect x="718" y="134" width="64" height="16" rx="8" fill="#dcfce7"/>
+  <text x="750" y="146" fill="#15803d" font-size="9" text-anchor="middle">● Active</text>
+
+  <!-- Row 4 -->
+  <rect y="158" width="800" height="28" fill="#f8fafc"/>
+  <text x="16" y="176" fill="#1e293b" font-size="11">Stock Dividends</text>
+  <text x="200" y="176" fill="#64748b" font-size="10">Brokerage</text>
+  <text x="300" y="176" fill="#1e293b" font-size="11">$474</text>
+  <text x="380" y="176" fill="#64748b" font-size="10">$0</text>
+  <text x="460" y="176" fill="#22c55e" font-size="11" font-weight="bold">$474</text>
+  <text x="540" y="176" fill="#64748b" font-size="10">0h</text>
+  <text x="610" y="176" fill="#22c55e" font-size="11">∞</text>
+  <rect x="655" y="162" width="56" height="16" rx="8" fill="#dcfce7"/>
+  <text x="683" y="174" fill="#15803d" font-size="9" text-anchor="middle">158%</text>
+  <rect x="718" y="162" width="64" height="16" rx="8" fill="#dbeafe"/>
+  <text x="750" y="174" fill="#1d4ed8" font-size="9" text-anchor="middle">● Passive</text>
+
+  <!-- Totals -->
+  <rect y="186" width="800" height="28" fill="#0e7490"/>
+  <text x="16" y="204" fill="#fff" font-size="11" font-weight="bold">MONTHLY TOTALS</text>
+  <text x="300" y="204" fill="#a5f3fc" font-size="11" font-weight="bold">$3,240</text>
+  <text x="380" y="204" fill="#67e8f9" font-size="11">$56</text>
+  <text x="460" y="204" fill="#4ade80" font-size="11" font-weight="bold">$3,184</text>
+  <text x="540" y="204" fill="#67e8f9" font-size="11">48h</text>
+  <text x="610" y="204" fill="#4ade80" font-size="11" font-weight="bold">$66/hr avg</text>
+
+  <!-- Growth chart -->
+  <rect y="226" width="800" height="194" fill="#0f172a"/>
+  <text x="20" y="248" fill="#94a3b8" font-size="11" font-weight="bold">ANNUAL GROWTH FORECAST</text>
+
+  <!-- Chart area -->
+  <rect x="16" y="256" width="460" height="120" rx="6" fill="#1e293b"/>
+  <text x="246" y="276" fill="#94a3b8" font-size="9" text-anchor="middle">Monthly Revenue by Stream</text>
+
+  <!-- Bars -->
+  <g>
+    <!-- Jan -->
+    <rect x="30" y="340" width="18" height="28" fill="#38bdf8"/><rect x="48" y="325" width="18" height="43" fill="#a78bfa"/><rect x="66" y="348" width="18" height="20" fill="#34d399"/><rect x="84" y="354" width="18" height="14" fill="#fb923c"/>
+    <text x="66" y="385" fill="#475569" font-size="7" text-anchor="middle">Jan</text>
+    <!-- Feb -->
+    <rect x="112" y="336" width="18" height="32" fill="#38bdf8"/><rect x="130" y="320" width="18" height="48" fill="#a78bfa"/><rect x="148" y="345" width="18" height="23" fill="#34d399"/><rect x="166" y="352" width="18" height="16" fill="#fb923c"/>
+    <text x="148" y="385" fill="#475569" font-size="7" text-anchor="middle">Feb</text>
+    <!-- Mar -->
+    <rect x="194" y="330" width="18" height="38" fill="#38bdf8"/><rect x="212" y="312" width="18" height="56" fill="#a78bfa"/><rect x="230" y="340" width="18" height="28" fill="#34d399"/><rect x="248" y="348" width="18" height="20" fill="#fb923c"/>
+    <text x="230" y="385" fill="#475569" font-size="7" text-anchor="middle">Mar</text>
+    <!-- Apr -->
+    <rect x="276" y="320" width="18" height="48" fill="#38bdf8"/><rect x="294" y="300" width="18" height="68" fill="#a78bfa"/><rect x="312" y="332" width="18" height="36" fill="#34d399"/><rect x="330" y="340" width="18" height="28" fill="#fb923c"/>
+    <text x="312" y="385" fill="#475569" font-size="7" text-anchor="middle">Apr</text>
+    <!-- May (projected) -->
+    <rect x="358" y="312" width="18" height="56" fill="#38bdf8" opacity="0.4"/><rect x="376" y="288" width="18" height="80" fill="#a78bfa" opacity="0.4"/><rect x="394" y="325" width="18" height="43" fill="#34d399" opacity="0.4"/><rect x="412" y="336" width="18" height="32" fill="#fb923c" opacity="0.4"/>
+    <text x="394" y="385" fill="#475569" font-size="7" text-anchor="middle">May*</text>
+  </g>
+
+  <!-- Legend -->
+  <rect x="60" y="390" width="10" height="10" fill="#38bdf8"/>
+  <text x="74" y="399" fill="#94a3b8" font-size="8">Fiverr</text>
+  <rect x="120" y="390" width="10" height="10" fill="#a78bfa"/>
+  <text x="134" y="399" fill="#94a3b8" font-size="8">Etsy</text>
+  <rect x="176" y="390" width="10" height="10" fill="#34d399"/>
+  <text x="190" y="399" fill="#94a3b8" font-size="8">YouTube</text>
+  <rect x="246" y="390" width="10" height="10" fill="#fb923c"/>
+  <text x="260" y="399" fill="#94a3b8" font-size="8">Dividends</text>
+  <text x="320" y="399" fill="#475569" font-size="8">* projected</text>
+
+  <!-- Stats cards right -->
+  <rect x="494" y="256" width="290" height="118" rx="6" fill="#1e293b"/>
+  <text x="639" y="276" fill="#94a3b8" font-size="9" text-anchor="middle">Income Milestones</text>
+  <text x="510" y="298" fill="#4ade80" font-size="11">✓</text><text x="526" y="298" fill="#e2e8f0" font-size="10">$500/mo — Achieved Jan</text>
+  <text x="510" y="316" fill="#4ade80" font-size="11">✓</text><text x="526" y="316" fill="#e2e8f0" font-size="10">$1,000/mo — Achieved Feb</text>
+  <text x="510" y="334" fill="#4ade80" font-size="11">✓</text><text x="526" y="334" fill="#e2e8f0" font-size="10">$2,000/mo — Achieved Mar</text>
+  <text x="510" y="352" fill="#4ade80" font-size="11">✓</text><text x="526" y="352" fill="#e2e8f0" font-size="10">$3,000/mo — Achieved Apr</text>
+  <text x="510" y="370" fill="#475569" font-size="11">○</text><text x="526" y="370" fill="#94a3b8" font-size="10">$5,000/mo — Target: Jul</text>
+
+  <text x="16" y="415" fill="#475569" font-size="10">PromptCopy.io — Side Income &amp; Multiple Revenue Stream Tracker</text>
+</svg>

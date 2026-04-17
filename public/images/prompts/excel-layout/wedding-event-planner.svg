@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="420" fill="#fdf2f8"/>
+  <rect width="800" height="46" fill="#9d174d"/>
+  <text x="20" y="28" fill="#fff" font-size="16" font-weight="bold">Wedding &amp; Event Budget Planner</text>
+  <text x="20" y="42" fill="#fbcfe8" font-size="10">Sarah &amp; James Wedding  |  Jun 14, 2026  |  Total Budget: $28,000  |  180 Guests</text>
+
+  <!-- Budget overview -->
+  <rect x="0" y="46" width="340" height="252" fill="#fff"/>
+  <rect x="0" y="46" width="340" height="26" fill="#831843"/>
+  <text x="14" y="64" fill="#fbcfe8" font-size="11" font-weight="bold">BUDGET OVERVIEW</text>
+
+  <!-- Table header -->
+  <rect y="72" width="340" height="20" fill="#fdf2f8"/>
+  <text x="14" y="87" fill="#9d174d" font-size="9" font-weight="bold">Category</text>
+  <text x="170" y="87" fill="#9d174d" font-size="9" font-weight="bold">Budget</text>
+  <text x="220" y="87" fill="#9d174d" font-size="9" font-weight="bold">Contracted</text>
+  <text x="280" y="87" fill="#9d174d" font-size="9" font-weight="bold">Paid</text>
+
+  <!-- Rows -->
+  <rect y="92" width="340" height="20" fill="#fff"/>
+  <text x="14" y="106" fill="#1e293b" font-size="10">🏛 Venue &amp; Space</text>
+  <text x="170" y="106" fill="#1e293b" font-size="10">$8,400</text>
+  <text x="220" y="106" fill="#1e293b" font-size="10">$8,200</text>
+  <text x="280" y="106" fill="#22c55e" font-size="10">$8,200 ✓</text>
+
+  <rect y="112" width="340" height="20" fill="#fdf2f8"/>
+  <text x="14" y="126" fill="#1e293b" font-size="10">📸 Photography &amp; Video</text>
+  <text x="170" y="126" fill="#1e293b" font-size="10">$3,360</text>
+  <text x="220" y="126" fill="#1e293b" font-size="10">$3,200</text>
+  <text x="280" y="126" fill="#22c55e" font-size="10">$1,600 ✓</text>
+
+  <rect y="132" width="340" height="20" fill="#fff"/>
+  <text x="14" y="146" fill="#1e293b" font-size="10">🎵 Music &amp; Entertainment</text>
+  <text x="170" y="146" fill="#1e293b" font-size="10">$2,240</text>
+  <text x="220" y="146" fill="#1e293b" font-size="10">$2,400</text>
+  <text x="280" y="146" fill="#f59e0b" font-size="10">$800</text>
+
+  <rect y="152" width="340" height="20" fill="#fdf2f8"/>
+  <text x="14" y="166" fill="#1e293b" font-size="10">🌸 Flowers &amp; Décor</text>
+  <text x="170" y="166" fill="#1e293b" font-size="10">$2,800</text>
+  <text x="220" y="166" fill="#1e293b" font-size="10">$2,650</text>
+  <text x="280" y="166" fill="#ef4444" font-size="10">$0 !</text>
+
+  <rect y="172" width="340" height="20" fill="#fff"/>
+  <text x="14" y="186" fill="#1e293b" font-size="10">🍽 Catering &amp; Cake</text>
+  <text x="170" y="186" fill="#1e293b" font-size="10">$9,800</text>
+  <text x="220" y="186" fill="#1e293b" font-size="10">$9,800</text>
+  <text x="280" y="186" fill="#22c55e" font-size="10">$4,900 ✓</text>
+
+  <rect y="192" width="340" height="20" fill="#fdf2f8"/>
+  <text x="14" y="206" fill="#1e293b" font-size="10">💌 Stationery</text>
+  <text x="170" y="206" fill="#1e293b" font-size="10">$560</text>
+  <text x="220" y="206" fill="#1e293b" font-size="10">$480</text>
+  <text x="280" y="206" fill="#22c55e" font-size="10">$480 ✓</text>
+
+  <rect y="212" width="340" height="20" fill="#fff"/>
+  <text x="14" y="226" fill="#1e293b" font-size="10">👗 Attire &amp; Beauty</text>
+  <text x="170" y="226" fill="#1e293b" font-size="10">$2,240</text>
+  <text x="220" y="226" fill="#1e293b" font-size="10">$2,100</text>
+  <text x="280" y="226" fill="#22c55e" font-size="10">$2,100 ✓</text>
+
+  <rect y="232" width="340" height="20" fill="#fdf2f8"/>
+  <text x="14" y="246" fill="#1e293b" font-size="10">💰 Contingency (5%)</text>
+  <text x="170" y="246" fill="#1e293b" font-size="10">$1,400</text>
+  <text x="220" y="246" fill="#94a3b8" font-size="10">—</text>
+  <text x="280" y="246" fill="#94a3b8" font-size="10">—</text>
+
+  <!-- Totals -->
+  <rect y="252" width="340" height="24" fill="#9d174d"/>
+  <text x="14" y="268" fill="#fff" font-size="10" font-weight="bold">TOTALS</text>
+  <text x="170" y="268" fill="#fbcfe8" font-size="10" font-weight="bold">$30,800</text>
+  <text x="220" y="268" fill="#fbcfe8" font-size="10">$28,830</text>
+  <text x="280" y="268" fill="#fbcfe8" font-size="10">$18,080</text>
+
+  <!-- Budget gauge -->
+  <rect y="276" width="340" height="22" fill="#fdf2f8"/>
+  <text x="14" y="291" fill="#9d174d" font-size="9">Budget Used:</text>
+  <rect x="100" y="281" width="200" height="12" rx="6" fill="#fce7f3"/>
+  <rect x="100" y="281" width="148" height="12" rx="6" fill="#ec4899"/>
+  <text x="308" y="291" fill="#9d174d" font-size="9" font-weight="bold">74%</text>
+
+  <!-- Vendor tracker -->
+  <rect x="340" y="46" width="460" height="252" fill="#1e293b"/>
+  <rect x="340" y="46" width="460" height="26" fill="#831843"/>
+  <text x="354" y="64" fill="#fbcfe8" font-size="11" font-weight="bold">VENDOR TRACKER</text>
+
+  <rect x="340" y="72" width="460" height="20" fill="#0f172a"/>
+  <text x="350" y="86" fill="#64748b" font-size="9">Vendor</text>
+  <text x="470" y="86" fill="#64748b" font-size="9">Service</text>
+  <text x="560" y="86" fill="#64748b" font-size="9">Price</text>
+  <text x="614" y="86" fill="#64748b" font-size="9">Deposit</text>
+  <text x="666" y="86" fill="#64748b" font-size="9">Contract</text>
+  <text x="726" y="86" fill="#64748b" font-size="9">Status</text>
+
+  <g>
+    <rect x="340" y="92" width="460" height="20" fill="#1e293b"/>
+    <text x="350" y="106" fill="#e2e8f0" font-size="9">The Grand Hall</text>
+    <text x="470" y="106" fill="#e2e8f0" font-size="9">Venue</text>
+    <text x="560" y="106" fill="#e2e8f0" font-size="9">$8,200</text>
+    <text x="614" y="106" fill="#22c55e" font-size="9">✓ Paid</text>
+    <text x="666" y="106" fill="#22c55e" font-size="9">✓ Signed</text>
+    <rect x="722" y="96" width="70" height="14" rx="7" fill="#15803d"/>
+    <text x="757" y="107" fill="#fff" font-size="8" text-anchor="middle">Confirmed</text>
+
+    <rect x="340" y="112" width="460" height="20" fill="#161b22"/>
+    <text x="350" y="126" fill="#e2e8f0" font-size="9">Light &amp; Love Studio</text>
+    <text x="470" y="126" fill="#e2e8f0" font-size="9">Photography</text>
+    <text x="560" y="126" fill="#e2e8f0" font-size="9">$3,200</text>
+    <text x="614" y="126" fill="#22c55e" font-size="9">✓ 50%</text>
+    <text x="666" y="126" fill="#22c55e" font-size="9">✓ Signed</text>
+    <rect x="722" y="116" width="70" height="14" rx="7" fill="#15803d"/>
+    <text x="757" y="127" fill="#fff" font-size="8" text-anchor="middle">Booked</text>
+
+    <rect x="340" y="132" width="460" height="20" fill="#1e293b"/>
+    <text x="350" y="146" fill="#e2e8f0" font-size="9">DJ Harmony</text>
+    <text x="470" y="146" fill="#e2e8f0" font-size="9">Entertainment</text>
+    <text x="560" y="146" fill="#e2e8f0" font-size="9">$2,400</text>
+    <text x="614" y="146" fill="#f59e0b" font-size="9">Pending</text>
+    <text x="666" y="146" fill="#22c55e" font-size="9">✓ Signed</text>
+    <rect x="722" y="136" width="70" height="14" rx="7" fill="#ca8a04"/>
+    <text x="757" y="147" fill="#fff" font-size="8" text-anchor="middle">Booked</text>
+
+    <rect x="340" y="152" width="460" height="20" fill="#161b22"/>
+    <text x="350" y="166" fill="#e2e8f0" font-size="9">Bloom Florals</text>
+    <text x="470" y="166" fill="#e2e8f0" font-size="9">Flowers</text>
+    <text x="560" y="166" fill="#e2e8f0" font-size="9">$2,650</text>
+    <text x="614" y="166" fill="#ef4444" font-size="9">⚠ Due!</text>
+    <text x="666" y="166" fill="#22c55e" font-size="9">✓ Signed</text>
+    <rect x="722" y="156" width="70" height="14" rx="7" fill="#991b1b"/>
+    <text x="757" y="167" fill="#fff" font-size="8" text-anchor="middle">Urgent</text>
+
+    <rect x="340" y="172" width="460" height="20" fill="#1e293b"/>
+    <text x="350" y="186" fill="#e2e8f0" font-size="9">Saveur Catering</text>
+    <text x="470" y="186" fill="#e2e8f0" font-size="9">Catering</text>
+    <text x="560" y="186" fill="#e2e8f0" font-size="9">$9,800</text>
+    <text x="614" y="186" fill="#22c55e" font-size="9">✓ 50%</text>
+    <text x="666" y="186" fill="#22c55e" font-size="9">✓ Signed</text>
+    <rect x="722" y="176" width="70" height="14" rx="7" fill="#15803d"/>
+    <text x="757" y="187" fill="#fff" font-size="8" text-anchor="middle">Confirmed</text>
+  </g>
+
+  <!-- Guest RSVP summary -->
+  <rect x="340" y="204" width="460" height="94" fill="#0f172a"/>
+  <text x="354" y="222" fill="#94a3b8" font-size="10" font-weight="bold">GUEST LIST &amp; RSVP SUMMARY</text>
+  <rect x="352" y="228" width="96" height="56" rx="6" fill="#1e293b"/>
+  <text x="400" y="246" fill="#94a3b8" font-size="9" text-anchor="middle">Invited</text>
+  <text x="400" y="266" fill="#f1f5f9" font-size="20" font-weight="bold" text-anchor="middle">180</text>
+
+  <rect x="456" y="228" width="96" height="56" rx="6" fill="#1e293b"/>
+  <text x="504" y="246" fill="#94a3b8" font-size="9" text-anchor="middle">Attending</text>
+  <text x="504" y="266" fill="#4ade80" font-size="20" font-weight="bold" text-anchor="middle">142</text>
+
+  <rect x="560" y="228" width="96" height="56" rx="6" fill="#1e293b"/>
+  <text x="608" y="246" fill="#94a3b8" font-size="9" text-anchor="middle">Awaiting</text>
+  <text x="608" y="266" fill="#f59e0b" font-size="20" font-weight="bold" text-anchor="middle">28</text>
+
+  <rect x="664" y="228" width="128" height="56" rx="6" fill="#1e293b"/>
+  <text x="728" y="246" fill="#94a3b8" font-size="9" text-anchor="middle">Meals Needed</text>
+  <text x="728" y="262" fill="#f1f5f9" font-size="14" font-weight="bold" text-anchor="middle">142</text>
+  <text x="728" y="278" fill="#94a3b8" font-size="8" text-anchor="middle">12 veg • 4 kids</text>
+
+  <!-- Checklist -->
+  <rect y="298" width="800" height="122" fill="#0f172a"/>
+  <text x="20" y="318" fill="#94a3b8" font-size="11" font-weight="bold">PLANNING CHECKLIST — 58 days to go!</text>
+  <g font-size="10">
+    <text x="20" y="338" fill="#4ade80">✓</text><text x="36" y="338" fill="#e2e8f0">Book venue</text>
+    <text x="20" y="355" fill="#4ade80">✓</text><text x="36" y="355" fill="#e2e8f0">Book photographer</text>
+    <text x="20" y="372" fill="#4ade80">✓</text><text x="36" y="372" fill="#e2e8f0">Send invitations</text>
+    <text x="20" y="389" fill="#f59e0b">○</text><text x="36" y="389" fill="#e2e8f0">Pay florist deposit</text>
+
+    <text x="200" y="338" fill="#4ade80">✓</text><text x="216" y="338" fill="#e2e8f0">Order wedding dress</text>
+    <text x="200" y="355" fill="#f59e0b">○</text><text x="216" y="355" fill="#e2e8f0">Finalize menu</text>
+    <text x="200" y="372" fill="#f59e0b">○</text><text x="216" y="372" fill="#e2e8f0">Book honeymoon hotel</text>
+    <text x="200" y="389" fill="#64748b">□</text><text x="216" y="389" fill="#94a3b8">Create seating chart</text>
+
+    <text x="420" y="338" fill="#4ade80">✓</text><text x="436" y="338" fill="#e2e8f0">Set ceremony music list</text>
+    <text x="420" y="355" fill="#64748b">□</text><text x="436" y="355" fill="#94a3b8">Hair &amp; makeup trial</text>
+    <text x="420" y="372" fill="#64748b">□</text><text x="436" y="372" fill="#94a3b8">Order wedding cake</text>
+    <text x="420" y="389" fill="#64748b">□</text><text x="436" y="389" fill="#94a3b8">Write vows</text>
+
+    <text x="640" y="338" fill="#64748b">□</text><text x="656" y="338" fill="#94a3b8">Final fitting</text>
+    <text x="640" y="355" fill="#64748b">□</text><text x="656" y="355" fill="#94a3b8">Rehearsal dinner plan</text>
+    <text x="640" y="372" fill="#64748b">□</text><text x="656" y="372" fill="#94a3b8">Transportation booking</text>
+    <text x="640" y="389" fill="#64748b">□</text><text x="656" y="389" fill="#94a3b8">Day-of timeline</text>
+  </g>
+
+  <text x="16" y="413" fill="#475569" font-size="10">PromptCopy.io — Wedding &amp; Event Budget Planner Template</text>
+</svg>

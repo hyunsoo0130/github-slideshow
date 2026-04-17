@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="420" fill="#f8fafc"/>
+  <!-- Title -->
+  <rect width="800" height="50" fill="#1e293b"/>
+  <text x="20" y="32" fill="#f1f5f9" font-size="16" font-weight="bold">Subscription Expense Audit</text>
+  <text x="600" y="32" fill="#94a3b8" font-size="12">Monthly: $342  Annual: $4,104</text>
+
+  <!-- Header row -->
+  <rect y="50" width="800" height="28" fill="#334155"/>
+  <text x="16" y="69" fill="#e2e8f0" font-size="10" font-weight="bold">Service</text>
+  <text x="200" y="69" fill="#e2e8f0" font-size="10" font-weight="bold">Category</text>
+  <text x="320" y="69" fill="#e2e8f0" font-size="10" font-weight="bold">Monthly</text>
+  <text x="400" y="69" fill="#e2e8f0" font-size="10" font-weight="bold">Last Used</text>
+  <text x="490" y="69" fill="#e2e8f0" font-size="10" font-weight="bold">Usage</text>
+  <text x="580" y="69" fill="#e2e8f0" font-size="10" font-weight="bold">Score</text>
+  <text x="650" y="69" fill="#e2e8f0" font-size="10" font-weight="bold">Recommendation</text>
+
+  <!-- Rows -->
+  <!-- Netflix -->
+  <rect y="78" width="800" height="28" fill="#fff"/>
+  <text x="16" y="97" fill="#1e293b" font-size="11">Netflix</text>
+  <text x="200" y="97" fill="#64748b" font-size="11">Streaming</text>
+  <text x="320" y="97" fill="#1e293b" font-size="11">$15.49</text>
+  <text x="400" y="97" fill="#64748b" font-size="11">Today</text>
+  <text x="490" y="97" fill="#22c55e" font-size="11">Daily</text>
+  <text x="580" y="97" fill="#22c55e" font-size="11">★★★★★</text>
+  <rect x="648" y="82" width="40" height="16" rx="8" fill="#dcfce7"/>
+  <text x="668" y="94" fill="#15803d" font-size="9" font-weight="bold" text-anchor="middle">Keep</text>
+
+  <!-- Spotify -->
+  <rect y="106" width="800" height="28" fill="#f8fafc"/>
+  <text x="16" y="125" fill="#1e293b" font-size="11">Spotify</text>
+  <text x="200" y="125" fill="#64748b" font-size="11">Music</text>
+  <text x="320" y="125" fill="#1e293b" font-size="11">$9.99</text>
+  <text x="400" y="125" fill="#64748b" font-size="11">Yesterday</text>
+  <text x="490" y="125" fill="#22c55e" font-size="11">Daily</text>
+  <text x="580" y="125" fill="#22c55e" font-size="11">★★★★★</text>
+  <rect x="648" y="110" width="40" height="16" rx="8" fill="#dcfce7"/>
+  <text x="668" y="122" fill="#15803d" font-size="9" font-weight="bold" text-anchor="middle">Keep</text>
+
+  <!-- Gym -->
+  <rect y="134" width="800" height="28" fill="#fff"/>
+  <text x="16" y="153" fill="#1e293b" font-size="11">Gym Membership</text>
+  <text x="200" y="153" fill="#64748b" font-size="11">Health/Fitness</text>
+  <text x="320" y="153" fill="#1e293b" font-size="11">$49.00</text>
+  <text x="400" y="153" fill="#ef4444" font-size="11">43 days ago</text>
+  <text x="490" y="153" fill="#ef4444" font-size="11">Never</text>
+  <text x="580" y="153" fill="#ef4444" font-size="11">★☆☆☆☆</text>
+  <rect x="638" y="138" width="110" height="16" rx="8" fill="#fee2e2"/>
+  <text x="693" y="150" fill="#dc2626" font-size="9" font-weight="bold" text-anchor="middle">CANCEL NOW</text>
+
+  <!-- Adobe -->
+  <rect y="162" width="800" height="28" fill="#f8fafc"/>
+  <text x="16" y="181" fill="#1e293b" font-size="11">Adobe Creative Cloud</text>
+  <text x="200" y="181" fill="#64748b" font-size="11">Productivity</text>
+  <text x="320" y="181" fill="#1e293b" font-size="11">$54.99</text>
+  <text x="400" y="181" fill="#64748b" font-size="11">3 days ago</text>
+  <text x="490" y="181" fill="#f59e0b" font-size="11">Weekly</text>
+  <text x="580" y="181" fill="#f59e0b" font-size="11">★★★★☆</text>
+  <rect x="648" y="166" width="40" height="16" rx="8" fill="#dcfce7"/>
+  <text x="668" y="178" fill="#15803d" font-size="9" font-weight="bold" text-anchor="middle">Keep</text>
+
+  <!-- LinkedIn -->
+  <rect y="190" width="800" height="28" fill="#fff"/>
+  <text x="16" y="209" fill="#1e293b" font-size="11">LinkedIn Premium</text>
+  <text x="200" y="209" fill="#64748b" font-size="11">Productivity</text>
+  <text x="320" y="209" fill="#1e293b" font-size="11">$39.99</text>
+  <text x="400" y="209" fill="#ef4444" font-size="11">28 days ago</text>
+  <text x="490" y="209" fill="#ef4444" font-size="11">Rarely</text>
+  <text x="580" y="209" fill="#ef4444" font-size="11">★★☆☆☆</text>
+  <rect x="628" y="194" width="130" height="16" rx="8" fill="#fed7aa"/>
+  <text x="693" y="206" fill="#92400e" font-size="9" font-weight="bold" text-anchor="middle">Consider Canceling</text>
+
+  <!-- Duolingo -->
+  <rect y="218" width="800" height="28" fill="#f8fafc"/>
+  <text x="16" y="237" fill="#1e293b" font-size="11">Duolingo Plus</text>
+  <text x="200" y="237" fill="#64748b" font-size="11">Education</text>
+  <text x="320" y="237" fill="#1e293b" font-size="11">$6.99</text>
+  <text x="400" y="237" fill="#ef4444" font-size="11">67 days ago</text>
+  <text x="490" y="237" fill="#ef4444" font-size="11">Never</text>
+  <text x="580" y="237" fill="#ef4444" font-size="11">★☆☆☆☆</text>
+  <rect x="638" y="222" width="110" height="16" rx="8" fill="#fee2e2"/>
+  <text x="693" y="234" fill="#dc2626" font-size="9" font-weight="bold" text-anchor="middle">CANCEL NOW</text>
+
+  <!-- Summary panel -->
+  <rect y="270" width="800" height="150" fill="#0f172a"/>
+
+  <rect x="16" y="285" width="180" height="75" rx="8" fill="#1e293b"/>
+  <text x="106" y="308" fill="#94a3b8" font-size="10" text-anchor="middle">Monthly Spend</text>
+  <text x="106" y="338" fill="#f1f5f9" font-size="24" font-weight="bold" text-anchor="middle">$342</text>
+  <text x="106" y="354" fill="#94a3b8" font-size="9" text-anchor="middle">$4,104 / year</text>
+
+  <rect x="212" y="285" width="180" height="75" rx="8" fill="#1e293b"/>
+  <text x="302" y="308" fill="#94a3b8" font-size="10" text-anchor="middle">Potential Savings</text>
+  <text x="302" y="338" fill="#34d399" font-size="24" font-weight="bold" text-anchor="middle">$696</text>
+  <text x="302" y="354" fill="#94a3b8" font-size="9" text-anchor="middle">if cancelled recommended</text>
+
+  <rect x="408" y="285" width="180" height="75" rx="8" fill="#1e293b"/>
+  <text x="498" y="308" fill="#94a3b8" font-size="10" text-anchor="middle">Cancel Immediately</text>
+  <text x="498" y="338" fill="#f87171" font-size="24" font-weight="bold" text-anchor="middle">3</text>
+  <text x="498" y="354" fill="#94a3b8" font-size="9" text-anchor="middle">subscriptions</text>
+
+  <!-- Pie chart placeholder -->
+  <circle cx="680" cy="325" r="45" fill="none" stroke="#334155" stroke-width="2"/>
+  <path d="M680 325 L680 280 A45 45 0 0 1 720 352 Z" fill="#38bdf8"/>
+  <path d="M680 325 L720 352 A45 45 0 0 1 643 358 Z" fill="#a78bfa"/>
+  <path d="M680 325 L643 358 A45 45 0 0 1 680 280 Z" fill="#34d399"/>
+  <text x="680" y="384" fill="#94a3b8" font-size="9" text-anchor="middle">By Category</text>
+
+  <text x="16" y="410" fill="#475569" font-size="10">PromptCopy.io — Subscription Expense Audit Template</text>
+</svg>

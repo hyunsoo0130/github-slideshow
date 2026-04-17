@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="420" fill="#f8fafc"/>
+  <rect width="800" height="48" fill="#7c3aed"/>
+  <text x="20" y="28" fill="#fff" font-size="16" font-weight="bold">Content Creator Calendar — April 2026</text>
+  <text x="20" y="44" fill="#ddd6fe" font-size="10">YouTube  |  Instagram  |  TikTok  |  Blog  |  Twitter</text>
+
+  <!-- Week header -->
+  <rect y="48" width="800" height="28" fill="#1e293b"/>
+  <g fill="#94a3b8" font-size="10" font-weight="bold">
+    <text x="20" y="67">Platform</text>
+    <text x="130" y="67">Mon Apr 14</text>
+    <text x="240" y="67">Tue Apr 15</text>
+    <text x="350" y="67">Wed Apr 16</text>
+    <text x="460" y="67">Thu Apr 17</text>
+    <text x="570" y="67">Fri Apr 18</text>
+    <text x="680" y="67">Sat/Sun</text>
+  </g>
+
+  <!-- YouTube row -->
+  <rect y="76" width="800" height="50" fill="#fef2f2"/>
+  <rect x="0" y="76" width="120" height="50" fill="#dc2626"/>
+  <text x="60" y="101" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">▶ YouTube</text>
+  <text x="60" y="116" fill="#fecaca" font-size="9" text-anchor="middle">2x / week</text>
+
+  <rect x="128" y="80" width="104" height="42" rx="4" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="180" y="96" fill="#64748b" font-size="8" text-anchor="middle">✅ Published</text>
+  <text x="180" y="108" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">AI Tools in 2026</text>
+  <text x="180" y="118" fill="#94a3b8" font-size="8" text-anchor="middle">12:42  •  18K views</text>
+
+  <rect x="348" y="80" width="104" height="42" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="400" y="96" fill="#92400e" font-size="8" text-anchor="middle">🎬 Editing</text>
+  <text x="400" y="108" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">Midjourney Tips</text>
+  <text x="400" y="118" fill="#94a3b8" font-size="8" text-anchor="middle">Target: Apr 19</text>
+
+  <!-- Instagram row -->
+  <rect y="126" width="800" height="50" fill="#fdf4ff"/>
+  <rect x="0" y="126" width="120" height="50" fill="#a855f7"/>
+  <text x="60" y="151" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">📷 Instagram</text>
+  <text x="60" y="166" fill="#e9d5ff" font-size="9" text-anchor="middle">Daily</text>
+
+  <rect x="128" y="130" width="104" height="42" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="180" y="146" fill="#15803d" font-size="8" text-anchor="middle">✅ Posted</text>
+  <text x="180" y="158" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">Setup Desk Tour</text>
+  <text x="180" y="168" fill="#94a3b8" font-size="8" text-anchor="middle">4.2K likes</text>
+
+  <rect x="238" y="130" width="104" height="42" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="290" y="146" fill="#15803d" font-size="8" text-anchor="middle">✅ Posted</text>
+  <text x="290" y="158" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">Productivity Tips</text>
+  <text x="290" y="168" fill="#94a3b8" font-size="8" text-anchor="middle">3.8K likes</text>
+
+  <rect x="458" y="130" width="104" height="42" rx="4" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="510" y="146" fill="#1d4ed8" font-size="8" text-anchor="middle">📝 Drafting</text>
+  <text x="510" y="158" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">AI Art Showcase</text>
+  <text x="510" y="168" fill="#94a3b8" font-size="8" text-anchor="middle">Post: Today 6PM</text>
+
+  <!-- TikTok row -->
+  <rect y="176" width="800" height="50" fill="#f0fdf4"/>
+  <rect x="0" y="176" width="120" height="50" fill="#0d9488"/>
+  <text x="60" y="201" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">♪ TikTok</text>
+  <text x="60" y="216" fill="#ccfbf1" font-size="9" text-anchor="middle">3x / week</text>
+
+  <rect x="238" y="180" width="104" height="42" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="290" y="196" fill="#15803d" font-size="8" text-anchor="middle">✅ Posted</text>
+  <text x="290" y="208" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">60s AI Tutorial</text>
+  <text x="290" y="218" fill="#94a3b8" font-size="8" text-anchor="middle">84K plays</text>
+
+  <rect x="568" y="180" width="104" height="42" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="620" y="196" fill="#92400e" font-size="8" text-anchor="middle">🎬 Filming</text>
+  <text x="620" y="208" fill="#1e293b" font-size="9" text-anchor="middle" font-weight="bold">Trend Challenge</text>
+  <text x="620" y="218" fill="#94a3b8" font-size="8" text-anchor="middle">Film: Today</text>
+
+  <!-- Performance panel -->
+  <rect y="238" width="800" height="182" fill="#1e293b"/>
+  <text x="20" y="260" fill="#94a3b8" font-size="11" font-weight="bold">PERFORMANCE TRACKER — April 2026</text>
+
+  <!-- Stats cards -->
+  <rect x="16" y="268" width="180" height="68" rx="6" fill="#0f172a"/>
+  <text x="106" y="288" fill="#94a3b8" font-size="9" text-anchor="middle">▶ YouTube Views</text>
+  <text x="106" y="312" fill="#f1f5f9" font-size="22" font-weight="bold" text-anchor="middle">284K</text>
+  <text x="106" y="328" fill="#22c55e" font-size="9" text-anchor="middle">▲ +18% vs last month</text>
+
+  <rect x="204" y="268" width="180" height="68" rx="6" fill="#0f172a"/>
+  <text x="294" y="288" fill="#94a3b8" font-size="9" text-anchor="middle">📷 IG Followers</text>
+  <text x="294" y="312" fill="#f1f5f9" font-size="22" font-weight="bold" text-anchor="middle">42.1K</text>
+  <text x="294" y="328" fill="#22c55e" font-size="9" text-anchor="middle">▲ +1,240 this month</text>
+
+  <rect x="392" y="268" width="180" height="68" rx="6" fill="#0f172a"/>
+  <text x="482" y="288" fill="#94a3b8" font-size="9" text-anchor="middle">♪ TikTok Plays</text>
+  <text x="482" y="312" fill="#f1f5f9" font-size="22" font-weight="bold" text-anchor="middle">1.2M</text>
+  <text x="482" y="328" fill="#22c55e" font-size="9" text-anchor="middle">▲ +44% vs last month</text>
+
+  <rect x="580" y="268" width="204" height="68" rx="6" fill="#0f172a"/>
+  <text x="682" y="288" fill="#94a3b8" font-size="9" text-anchor="middle">💰 Monthly Revenue</text>
+  <text x="682" y="312" fill="#34d399" font-size="22" font-weight="bold" text-anchor="middle">$2,840</text>
+  <text x="682" y="328" fill="#22c55e" font-size="9" text-anchor="middle">AdSense + Brand Deals</text>
+
+  <!-- Mini chart -->
+  <rect x="16" y="344" width="768" height="60" rx="6" fill="#0f172a"/>
+  <text x="30" y="362" fill="#94a3b8" font-size="9">Weekly Views Trend</text>
+  <polyline points="50,395 150,385 250,378 350,388 450,370 550,362 650,355 750,348" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <polyline points="50,398 150,392 250,390 350,395 450,388 550,382 650,378 750,370" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="756" y="358" fill="#38bdf8" font-size="8">YT</text>
+  <text x="756" y="374" fill="#a78bfa" font-size="8">IG</text>
+
+  <text x="16" y="414" fill="#475569" font-size="10">PromptCopy.io — Content Creator Calendar &amp; Performance Tracker</text>
+</svg>

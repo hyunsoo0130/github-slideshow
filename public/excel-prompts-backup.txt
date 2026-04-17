@@ -1,0 +1,1577 @@
+EXCEL PROMPTS BACKUP
+Generated: April 2026 | PromptCopy.io
+======================================================================
+
+[EXCEL-01] Daily Calorie & Nutrition Tracker
+Slug: calorie-tracker
+----------------------------------------------------------------------
+Create a Daily Calorie & Nutrition Tracker spreadsheet for Excel or Google Sheets
+with an auto-lookup food database using VLOOKUP.
+
+SHEET 1: FOOD DATABASE (the lookup engine)
+
+Column structure:
+A: Food Name (exact, used for VLOOKUP key)
+B: Serving Size (default, e.g., "100g", "1 cup", "1 piece")
+C: Calories (kcal per serving)
+D: Protein (g)
+E: Carbohydrates (g)
+F: Fat (g)
+G: Fiber (g)
+H: Sugar (g)
+I: Sodium (mg)
+J: Category (Protein / Grain / Vegetable / Fruit / Dairy / Fat / Snack / Beverage / Fast Food)
+
+Populate with 300+ common foods across all categories, including:
+
+PROTEINS (30+ items):
+Chicken breast (100g), Salmon fillet (100g), Egg (1 large), Greek yogurt (100g),
+Canned tuna (100g), Beef sirloin (100g), Tofu firm (100g), Shrimp (100g),
+Cottage cheese (100g), Whey protein powder (1 scoop 30g), [continue...]
+
+GRAINS & CARBS (30+ items):
+White rice cooked (100g), Brown rice cooked (100g), Oatmeal cooked (100g),
+Whole wheat bread (1 slice), White bread (1 slice), Pasta cooked (100g),
+Sweet potato (100g), Regular potato (100g), Quinoa cooked (100g), [continue...]
+
+VEGETABLES (25+ items):
+Broccoli (100g), Spinach raw (100g), Kale (100g), Carrots (100g),
+Cucumber (100g), Tomato (100g), Bell pepper (100g), Avocado (100g), [continue...]
+
+FRUITS (20+ items):
+Banana (1 medium), Apple (1 medium), Orange (1 medium), Berries mixed (100g),
+Mango (100g), Grapes (100g), Watermelon (100g), [continue...]
+
+DAIRY (15+ items):
+Whole milk (1 cup), Skim milk (1 cup), Cheddar cheese (30g),
+Butter (1 tbsp), Heavy cream (1 tbsp), [continue...]
+
+SNACKS & FAST FOOD (30+ items):
+Almonds (28g/1oz), Peanut butter (2 tbsp), Potato chips (28g),
+Chocolate dark 70% (28g), Granola bar (1 bar 40g), [continue...]
+
+BEVERAGES (15+ items):
+Coffee black (240ml), Whole milk latte (medium), Orange juice (240ml),
+Sports drink (500ml), Cola (355ml), Beer (355ml), [continue...]
+
+SHEET 2: DAILY FOOD LOG
+
+USER PROFILE (Rows 1–8):
+A1: "Name:" | B1: [YOUR_NAME]
+A2: "Age:" | B2: [AGE]
+A3: "Weight (kg):" | B3: [WEIGHT]
+A4: "Height (cm):" | B4: [HEIGHT]
+A5: "Activity Level:" | B5: [ACTIVITY_LEVEL]
+A6: "Goal:" | B6: [GOAL] (Lose / Maintain / Gain)
+A7: "Daily Calorie Target:" | B7: [calculated BMR × activity factor]
+A8: "Protein Target (g):" | B8: =[WEIGHT]*[PROTEIN_MULTIPLIER]
+
+TODAY'S LOG (Rows 10 onward):
+A: Meal (Breakfast/Lunch/Dinner/Snack)
+B: Food Name (type here — must match Sheet1 Column A)
+C: Quantity (number of servings)
+D: Calories (auto) =IFERROR(VLOOKUP(B,Sheet1!$A:$C,3,FALSE)*C,"Not found")
+E: Protein (g) (auto) =IFERROR(VLOOKUP(B,Sheet1!$A:$D,4,FALSE)*C,"")
+F: Carbs (g) (auto)
+G: Fat (g) (auto)
+H: Fiber (g) (auto)
+I: Notes
+
+DAILY TOTALS (Row 40):
+Calories: =SUM(D10:D39)
+Protein: =SUM(E10:E39)
+Carbs: =SUM(F10:F39)
+Fat: =SUM(G10:G39)
+
+PROGRESS BARS (Row 42):
+Calories: =REPT("█",MIN(ROUND(D40/B7*10,0),10))&" "&TEXT(D40,"0")&"/"&TEXT(B7,"0")&" kcal"
+Color: <85% target = green | 85–100% = yellow | >100% = red
+
+MACROS PIE: Calorie breakdown from protein/carbs/fat
+
+SHEET 3: WEEKLY OVERVIEW
+
+7-day summary table:
+Columns: Date | Total Cal | Protein | Carbs | Fat | vs Target | Weight (logged)
+Line chart: Daily calories vs target line over 7 days
+Bar chart: Macro distribution per day
+
+SHEET 4: WEIGHT PROGRESS
+
+Columns: Date | Weight (kg) | BMI | Change from last week | Notes
+Line chart: Weight trend over time with goal line
+Projection formula: estimated date to reach goal weight
+
+Generate this tracker for a [AGE]-year-old [GENDER] weighing [WEIGHT]kg,
+height [HEIGHT]cm, [ACTIVITY_LEVEL] activity level, goal: [GOAL].
+
+======================================================================
+
+[EXCEL-02] Content Creator Calendar
+Slug: content-creator-calendar
+----------------------------------------------------------------------
+Create a Content Creator Calendar spreadsheet for Excel or Google Sheets.
+Designed for multi-platform creators (YouTube, Instagram, TikTok, Blog, etc.)
+
+SHEET 1: MONTHLY CONTENT CALENDAR
+
+HEADER (Row 1):
+A1: "Content Calendar" | B1: [MONTH YEAR] — merged, styled header
+
+PLATFORM TABS (top color-coded rows, one per platform):
+Row 3: YouTube schedule row
+Row 4: Instagram/TikTok schedule row
+Row 5: Blog/Newsletter schedule row
+Row 6: Twitter/X schedule row
+
+CALENDAR GRID (Rows 8–15, 7 columns for Mon–Sun):
+Each cell contains:
+- Content title (text)
+- Platform icon (emoji)
+- Status indicator (color)
+
+STATUS COLOR CODE:
+Idea (gray) → Scripting/Writing (blue) → Filming/Drafting (yellow) →
+Editing (orange) → Scheduled (purple) → Published (green) | Cancelled (red)
+
+SHEET 2: CONTENT PIPELINE
+
+Header columns:
+A: Content Title
+B: Platform (YouTube/Instagram/TikTok/Blog/Twitter/LinkedIn)
+C: Content Type (Video/Short/Post/Story/Reel/Article/Thread)
+D: Topic / Niche Tag
+E: Status
+F: Script/Outline Link
+G: Publish Date (target)
+H: Actual Publish Date
+I: Filming/Drafting Date
+J: Editing Deadline
+K: Thumbnail Done (Yes/No)
+L: SEO Keywords
+M: CTA (Call to Action)
+N: Estimated Length / Word Count
+O: Collaboration (solo/collab — with whom)
+P: Notes / Ideas
+
+CONDITIONAL FORMATTING (Column E — Status):
+Same color scheme as Sheet 1
+
+SHEET 3: PERFORMANCE TRACKER
+
+For each piece of published content:
+A: Title
+B: Platform
+C: Publish Date
+D: Views / Reach (Day 1)
+E: Views / Reach (Week 1)
+F: Views / Reach (Month 1)
+G: Likes
+H: Comments
+I: Shares / Saves
+J: Subscribers/Followers Gained
+K: Engagement Rate (auto) =(G+H+I)/F as %
+L: Click-Through Rate (for YouTube)
+M: Watch Time (YouTube, hours)
+N: Revenue (if monetized, optional)
+O: Top Comment / Feedback
+P: What Worked | Q: What to Improve
+
+PERFORMANCE AVERAGES (bottom):
+Average views, avg engagement rate, avg subs gained per video — by platform
+
+SHEET 4: IDEA BANK
+
+Capture content ideas without losing them:
+A: Idea Title
+B: Platform
+C: Source of Idea (trend/comment/competitor/research)
+D: Target Keyword
+E: Estimated Search Volume (manual)
+F: Competition Level (High/Med/Low)
+G: Priority (1–5 stars)
+H: Mood (evergreen/trending/seasonal)
+I: Resources Needed
+J: Notes / References
+K: Date Added
+L: Converted to Content? (Yes/No — links to pipeline)
+
+SHEET 5: MONTHLY ANALYTICS DASHBOARD
+
+PLATFORM TOTALS (this month vs last month):
+YouTube: Total views | New subscribers | Watch hours | Revenue
+Instagram: Total reach | New followers | Engagement rate
+TikTok: Total plays | New followers | Shares
+Blog: Pageviews | Unique visitors | Avg session time
+
+TOP PERFORMERS: Top 3 pieces of content by views this month
+
+CHARTS:
+- Line chart: Weekly views per platform (4 lines)
+- Bar chart: Content output per platform this month
+- Pie chart: Time spent per platform
+
+GOALS TRACKER:
+Monthly goal vs actual for each platform metric
+
+Generate a content calendar for a [NICHE] creator posting on [PLATFORMS]
+with the following weekly posting schedule: [SCHEDULE].
+Include [NUMBER] content ideas in the Idea Bank.
+
+======================================================================
+
+[EXCEL-03] Employee Onboarding Checklist
+Slug: employee-onboarding-checklist
+----------------------------------------------------------------------
+Create an employee onboarding checklist spreadsheet for [COMPANY NAME].
+New hire role: [JOB TITLE]. Start date: [START DATE]. Department: [DEPARTMENT].
+
+SHEET 1: MASTER CHECKLIST
+
+HEADER:
+Employee Name: [NAME] | Start Date: [DATE] | Manager: [MANAGER] | HR Contact: [HR NAME]
+Overall completion: =COUNTIF(status column, "Done")/COUNT(all tasks) formatted as %
+Progress bar visualization using REPT formula
+
+TASK SECTIONS (with columns: Task | Owner | Timeline | Status | Notes):
+
+BEFORE START DATE (Pre-boarding):
+□ Send welcome email with first-day instructions — HR — Day -5
+□ Set up workstation and equipment — IT — Day -3
+□ Create login credentials and system access — IT — Day -3
+□ Add to company Slack/Teams channels — IT — Day -2
+□ Prepare desk/office space — Facilities — Day -1
+□ Send parking/building access instructions — HR — Day -1
+
+DAY 1 — FIRST IMPRESSIONS:
+□ Welcome meeting with HR — HR — 9:00am
+□ Office/facility tour — HR — 10:00am
+□ Meet the team lunch/coffee — Manager — 12:00pm
+□ Review employment contract and policies — HR — 2:00pm
+□ Set up computer and tools — IT — 3:00pm
+□ Review Day 1 agenda — Manager — 4:30pm
+
+WEEK 1 — ORIENTATION:
+□ Complete company overview training — HR
+□ Meet key stakeholders (list 5 names) — Manager
+□ Learn team processes and tools — Manager
+□ Complete mandatory compliance training — HR
+□ Set 30/60/90 day goals with manager — Manager
+□ Complete IT security training — IT
+□ Review company handbook — Employee
+
+MONTH 1 — INTEGRATION:
+□ Shadow team members on key projects — Manager
+□ Complete role-specific training modules — [DEPARTMENT]
+□ Attend all relevant team meetings — Employee
+□ 2-week check-in with HR — HR
+□ Complete product/service deep-dive — [DEPARTMENT]
+□ 30-day review with manager — Manager
+
+MONTH 2–3 — RAMP-UP:
+□ Take ownership of first independent project — Manager
+□ Enroll in professional development course — Employee
+□ 60-day performance review — Manager
+□ Collect peer feedback — HR
+□ 90-day formal review and goal update — Manager
+□ Probation period completion sign-off — HR
+
+STATUS OPTIONS: Not Started / In Progress / Done / N/A / Blocked
+Conditional formatting: Done = green | In Progress = yellow | Blocked = red
+
+SHEET 2: DEPARTMENT-SPECIFIC TASKS
+Same format but tasks specific to [DEPARTMENT]
+Include tool training, access requirements, and role-specific certifications
+
+SHEET 3: RESOURCES & LINKS
+List of important links, documents, login URLs, and contacts
+
+Generate complete task list tailored to a [DEPARTMENT] role at a [COMPANY TYPE] company.
+
+======================================================================
+
+[EXCEL-04] Freelancer Rate & Revenue Calculator
+Slug: freelancer-rate-calculator
+----------------------------------------------------------------------
+Create a Freelancer Rate Calculator & Business Finance Tracker for Excel or Google Sheets.
+
+SHEET 1: RATE CALCULATOR
+
+PERSONAL FINANCIAL NEEDS (Rows 2–15):
+A: Expense Category | B: Monthly Amount | C: Annual Amount (auto)
+
+Essential Living Expenses:
+- Rent / Mortgage
+- Utilities & Internet
+- Groceries & Food
+- Transportation
+- Health Insurance (self-pay as freelancer)
+- Phone
+
+Business Expenses:
+- Software & Tools (Adobe, Figma, etc.)
+- Equipment / Hardware (amortized monthly)
+- Home Office (% of rent)
+- Marketing / Portfolio
+- Professional Development / Courses
+- Accounting / Legal
+
+Savings Goals:
+- Emergency Fund (target 6 months expenses)
+- Retirement (% of income)
+- Business Investment
+
+Taxes (Self-Employed):
+- Federal Income Tax (estimated %)
+- State Income Tax (%)
+- Self-Employment Tax (15.3% on net)
+
+TOTALS (Row 16–22):
+Annual Personal Expenses: =SUM(C)
+Annual Business Expenses: =SUM(C business)
+Annual Tax Reserve: =SUM(C taxes)
+Total Annual Need: =above sums
+Monthly Need: =Annual/12
+
+MINIMUM VIABLE RATE CALCULATOR (Rows 24–35):
+A24: "Billable Hours per Week" | B24: [BILLABLE_HOURS] (realistically 20–30)
+A25: "Weeks Worked per Year" | B25: [WEEKS] (typically 46–48 after vacation)
+A26: "Annual Billable Hours" | B26: =B24*B25
+A27: "Non-Billable Time % (admin, marketing, learning)" | B27: [OVERHEAD_%]
+A28: "Total Hours Worked Annually" | B28: =B26/(1-B27)
+A29: "Desired Annual Profit (above expenses)" | B29: [PROFIT_GOAL]
+A30: "Minimum Required Revenue" | B30: =TotalAnnualNeed+B29
+A31: "MINIMUM HOURLY RATE" | B31: =B30/B26 — bold, highlighted cell
+
+RATE TIERS:
+A33: "Survival Rate (break-even)" | B33: =TotalAnnualNeed/B26
+A34: "Comfortable Rate (+ 20% profit)" | B34: =B33*1.2
+A35: "Growth Rate (+ 50% profit)" | B35: =B33*1.5
+A36: "Market Rate (+ 100% profit)" | B36: =B33*2
+
+PROJECT RATE CALCULATOR:
+Given project scope:
+A40: "Estimated Project Hours" | B40: [PROJECT_HOURS]
+A41: "Chosen Hourly Rate" | B41: [YOUR_RATE]
+A42: "Project Quote (Time + Materials)" | B42: =B40*B41
+A43: "Flat Rate Quote (add 15% buffer)" | B43: =B42*1.15
+A44: "Retainer Rate (monthly)" | B44: =B41*[RETAINER_HOURS]
+
+SHEET 2: CLIENT & PROJECT TRACKER
+
+One row per project:
+A: Client Name
+B: Project Name / Description
+C: Project Type (Design/Dev/Writing/Consulting/Other)
+D: Start Date | E: End Date
+F: Quoted Rate (hourly or flat)
+G: Quoted Amount
+H: Hours Logged (actual)
+I: Actual Revenue
+J: Effective Hourly Rate (auto) =I/H
+K: Project Profit Margin % (auto) =(I-expenses)/I
+L: Scope Creep? (Yes/No)
+M: Invoice Status (Draft/Sent/Paid/Overdue)
+N: Payment Date
+O: Repeat Client? | P: Rating (1–5)
+Q: Notes / Testimonial
+
+CONDITIONAL FORMATTING:
+Effective Rate (J) < your minimum rate → red
+Invoice Status "Overdue" → red
+Rating 5 → gold
+
+CLIENT SUMMARY:
+Top 5 clients by revenue | Most profitable by hourly rate | Total outstanding invoices
+
+SHEET 3: INVOICE TRACKER
+
+A: Invoice Number (auto-increment)
+B: Invoice Date
+C: Client
+D: Project Description
+E: Hours | F: Rate | G: Amount
+H: Tax Rate | I: Tax Amount | J: Total with Tax
+K: Due Date (Net 30 default)
+L: Status (Unpaid/Paid/Partial/Overdue/Written Off)
+M: Payment Date | N: Payment Method
+O: Days to Pay (auto) =M-B
+
+ACCOUNTS RECEIVABLE SUMMARY:
+Total outstanding: =SUMIF(L,"Unpaid",J)+SUMIF(L,"Overdue",J)
+Overdue amount: =SUMIF(L,"Overdue",J)
+Average payment days: =AVERAGE(O) for paid invoices
+
+SHEET 4: QUARTERLY TAX PLANNER
+
+Q1 (Jan–Mar) | Q2 (Apr–Jun) | Q3 (Jul–Sep) | Q4 (Oct–Dec):
+- Gross Revenue
+- Business Expenses (deductible)
+- Net Profit (taxable)
+- Self-Employment Tax (15.3%)
+- Federal Income Tax (estimated by bracket)
+- State Income Tax
+- Total Tax Owed
+- Estimated Payment Due
+- Payment Made (Yes/No/Date)
+
+TAX DEDUCTION CHECKLIST:
+Home office, equipment, software, professional development, health insurance,
+half of self-employment tax, business travel, client entertainment
+
+Annual Summary: Total tax paid | Effective tax rate | Tax refund or owed
+
+Generate this calculator for a freelance [PROFESSION] with:
+Monthly living expenses of $[EXPENSES], targeting $[ANNUAL_INCOME] annual income,
+working approximately [HOURS] billable hours per week.
+
+======================================================================
+
+[EXCEL-05] 30-Day Habit & Goal Tracker
+Slug: habit-goal-tracker
+----------------------------------------------------------------------
+Create a 30-Day Habit & Goal Tracker spreadsheet for Excel or Google Sheets.
+
+SHEET 1: DAILY HABIT GRID
+
+LAYOUT:
+A1: "30-Day Habit Tracker" — merged A1:AF1, bold 18pt, colored header
+A2: "Month:" | B2: [MONTH YEAR] — user fills in
+
+Column Headers (Row 3):
+A3: "Habit"
+B3: "Goal/Target"
+C3 through AF3: Day 1 through Day 30 (numbers 1–30)
+AG3: "Total ✓"
+AH3: "Completion %"
+AI3: "Current Streak"
+AJ3: "Best Streak"
+
+HABITS (Rows 4–13, one per row):
+A4–A13: [HABIT_1] through [HABIT_10] — user's habit names
+B4–B13: Target (e.g., "Daily", "5x/week", "3x/week")
+
+DAILY CELLS (C4:AF13):
+Each cell: user types "✓" or "1" to mark completion
+Conditional formatting: ✓ = green fill | empty = light gray | "x" = red fill
+
+FORMULAS:
+AG4: =COUNTIF(C4:AF4,"✓")
+AH4: =AG4/30 formatted as %
+AI4: [streak formula counting consecutive recent ✓]
+AJ4: [max streak formula]
+
+STREAK FORMULA (AI column):
+=LET(data,C4:AF4,n,COLUMNS(data),
+ REDUCE(0,SEQUENCE(n,,n,-1),
+ LAMBDA(acc,i,IF(INDEX(data,1,i)="✓",acc+1,0))))
+
+BOTTOM SUMMARY (Row 15):
+A15: "Daily Completion Score" 
+C15:AF15: =COUNTIF(C4:C13,"✓")/10 as % — what % of habits done each day
+
+HEATMAP (Row 16):
+Color scale: 0% = white, 50% = yellow, 100% = dark green
+
+SHEET 2: MONTHLY GOALS
+
+For each of [NUMBER_OF_GOALS] goals:
+A: Goal Description
+B: Category (Health / Career / Finance / Learning / Relationships / Other)
+C: Specific Target (measurable)
+D: Start Value
+E: Current Value
+F: Target Value
+G: % Complete (auto formula)
+H: Target Date
+I: Daily Action Required
+J: Progress Notes
+K: Status (On Track / At Risk / Achieved / Failed)
+
+Progress bar (Column L):
+=REPT("█",ROUND(G2*10,0))&REPT("░",10-ROUND(G2*10,0))
+
+SHEET 3: WEEKLY REVIEW
+
+For each of the 4-5 weeks in the month:
+A: Week Number
+B: Wins (what went well)
+C: Struggles (what was hard)
+D: Adjustment for Next Week
+E: Habit Completion Rate that Week
+F: Goal Progress That Week
+G: Energy/Mood Rating (1–10)
+H: Notes
+
+SHEET 4: MONTHLY SUMMARY
+
+Overall stats pulled automatically:
+- Most consistent habit (highest %)
+- Weakest habit (lowest %)
+- Perfect days count (100% habit completion)
+- Longest streak achieved across all habits
+- Goals achieved count
+- Total habit completions
+
+Visual: Month calendar heatmap showing daily completion scores
+
+Generate this tracker for the habits: [HABIT_LIST]
+with goals: [GOAL_LIST]
+for the month of [MONTH] [YEAR].
+
+======================================================================
+
+[EXCEL-06] Inventory Management Spreadsheet
+Slug: inventory-management
+----------------------------------------------------------------------
+Create an inventory management spreadsheet for [BUSINESS NAME] — [BUSINESS TYPE].
+Product categories: [LIST MAIN CATEGORIES]. Currency: [CURRENCY].
+
+SHEET 1: INVENTORY MASTER
+
+COLUMNS:
+A: SKU / Item Code
+B: Product Name
+C: Category
+D: Description (brief)
+E: Unit of Measure (each, kg, box, etc.)
+F: Current Stock Qty
+G: Reorder Point (minimum before ordering)
+H: Reorder Quantity (how much to order)
+I: Max Stock Level
+J: Unit Cost (purchase price)
+K: Selling Price
+L: Margin % (=(K-J)/K)
+M: Total Value (=F×J)
+N: Supplier Name
+O: Supplier Lead Time (days)
+P: Last Ordered Date
+Q: Last Received Date
+R: Location/Bin Number
+S: Status (Active/Discontinued/Seasonal)
+T: Notes
+
+CONDITIONAL FORMATTING:
+Column F (Current Stock):
+- If F < G (below reorder point): RED background + "⚠ REORDER" in notes
+- If F < G×0.5 (critical): DARK RED, bold
+- If F > I (overstocked): YELLOW
+- Normal range: GREEN
+
+SHEET 2: LOW STOCK ALERTS DASHBOARD
+Auto-filtered view showing only items where Current Stock < Reorder Point.
+Sorted by urgency (most critical first).
+Columns: SKU | Product | Current Qty | Reorder Point | Shortage | Supplier | Lead Time | Action
+"URGENT ORDER NEEDED" header row for items < 50% of reorder point.
+
+SHEET 3: STOCK MOVEMENT LOG
+Date | SKU | Product | Transaction Type (Received / Sold / Adjusted / Returned) | Qty Change | Running Balance | Reference # | Staff
+
+SHEET 4: SUPPLIER DIRECTORY
+Supplier Name | Contact Person | Email | Phone | Products Supplied | Payment Terms | Lead Time | Rating | Notes
+
+SHEET 5: VALUATION SUMMARY
+Total inventory value by category (SUMIF formulas)
+Pie chart: inventory value distribution by category
+KPI tiles: Total SKUs | Total Value | SKUs in Stock | SKUs to Reorder | Dead Stock Items
+
+FORMULAS TO INCLUDE:
+- Reorder alert: =IF(F2<G2,"ORDER NOW","OK")
+- Days of stock remaining: =IF(AVERAGESALE>0, F2/AVERAGESALE, "N/A")
+- Turnover rate: =COGS/Average Inventory Value
+
+Generate 20 sample products across [CATEGORIES] with realistic pricing and stock levels.
+
+======================================================================
+
+[EXCEL-07] Job Application Tracker
+Slug: job-application-tracker
+----------------------------------------------------------------------
+Create a detailed Job Application Tracker spreadsheet layout for Excel or Google Sheets.
+
+SHEET 1: APPLICATION PIPELINE
+
+Header Row (Row 1):
+A1: Company Name
+B1: Position Title
+C1: Job Board / Source
+D1: Date Applied
+E1: Application Status
+F1: Salary Range
+G1: Location / Remote
+H1: Contact Name
+I1: Contact Email
+J1: Interview Date
+K1: Interview Type (Phone / Video / Onsite)
+L1: Follow-Up Sent (Yes/No)
+M1: Next Action
+N1: Notes / Impressions
+O1: Offer Amount
+
+STATUS DROPDOWN (Column E):
+Values: Not Applied | Applied | Screening | Phone Interview | Technical Test | Onsite Interview | Offer Received | Offer Declined | Rejected | Withdrawn
+
+CONDITIONAL FORMATTING (Column E):
+"Applied" → light blue
+"Phone Interview" / "Technical Test" / "Onsite Interview" → yellow
+"Offer Received" → bright green
+"Rejected" / "Withdrawn" → light red
+"Offer Declined" → orange
+
+FORMULA (Column P — Days Since Applied):
+P1: "Days Since Applied"
+P2: =IF(D2="","",TODAY()-D2)
+Color rule: >30 days = red, 15–30 = yellow, <15 = green
+
+FREEZE: Row 1 + Column A frozen for scrolling
+
+SHEET 2: INTERVIEW PREP
+
+For each company in Sheet1 with interview scheduled:
+A: Company Name (linked from Sheet1)
+B: Role
+C: Interview Date/Time
+D: Interviewer Names
+E: Key Questions to Prepare
+F: Company Research Notes (product, culture, recent news)
+G: Your Questions to Ask Them
+H: Post-Interview Feedback
+
+SHEET 3: DASHBOARD SUMMARY
+
+B2: "Total Applications" | C2: =COUNTA(Sheet1!A2:A500)
+B3: "Active Pipelines" | C3: =COUNTIF(Sheet1!E:E,"*Interview*")
+B4: "Offers Received" | C4: =COUNTIF(Sheet1!E:E,"Offer Received")
+B5: "Response Rate %" | C5: =C3/C2 formatted as %
+B6: "Avg Days to Response" | C6: =AVERAGEIF(Sheet1!E:E,"<>Applied",Sheet1!P:P)
+
+Donut chart placeholder: Application status breakdown by count
+Bar chart: Applications per week (using Date Applied column)
+
+SHEET 4: WEEKLY GOALS
+
+Track weekly job search activity:
+A: Week of (date)
+B: Applications Target | C: Applications Sent
+D: Networking Contacts Target | E: Contacts Made
+F: Follow-Ups Sent
+G: Notes
+
+Add sample data for a [JOB TITLE] job search in the [INDUSTRY] industry,
+with [NUMBER] of applications across various companies.
+
+======================================================================
+
+[EXCEL-08] KPI Metrics Tracker Dashboard
+Slug: kpi-metrics-tracker
+----------------------------------------------------------------------
+Create a KPI metrics tracker dashboard for [TEAM/DEPARTMENT] at [COMPANY NAME].
+Reporting period: [WEEKLY/MONTHLY]. Key stakeholders: [WHO REVIEWS THIS].
+Number of KPIs to track: [NUMBER, typically 8–12].
+
+DASHBOARD LAYOUT (Sheet 1):
+
+HEADER ROW
+"KPI Dashboard — [TEAM] — [PERIOD]"
+Last updated: [DATE] | Prepared by: [NAME]
+Overall health score: [FORMULA — average of all KPI achievement %]
+
+KPI TABLE STRUCTURE (one row per KPI):
+Column A: KPI Name
+Column B: Description (1-line)
+Column C: Owner
+Column D: Target (this period)
+Column E: Actual (this period)
+Column F: Achievement % (=E/D formatted as %)
+Column G: vs Last Period (% change)
+Column H: vs Same Period Last Year (% change)
+Column I: Trend (Sparkline — last 8 periods)
+Column J: Status (traffic light: 🟢 🟡 🔴 based on achievement %)
+Column K: Notes/Context
+
+TRAFFIC LIGHT RULES (Conditional Formatting):
+≥ 90% achievement → Green 🟢 background
+75–89% → Yellow 🟡 background
+< 75% → Red 🔴 background
+
+GENERATE KPIs for [DEPARTMENT TYPE]:
+[If Sales]: Revenue, Deals Closed, Win Rate, Pipeline Value, Avg Deal Size, CAC, Churn Rate, NPS
+[If Marketing]: Website Traffic, MQL Leads, Conversion Rate, CAC, Email Open Rate, Social Reach, Content Published
+[If Operations]: On-time Delivery %, Defect Rate, Cost per Unit, Employee Utilization, SLA Compliance
+[If HR]: Headcount, Attrition Rate, Time-to-Hire, Employee Satisfaction, Training Hours, Absenteeism
+
+CHARTS SECTION (below main table):
+Chart 1: Bar chart — KPI achievement % sorted high to low
+Chart 2: Line chart — top 3 KPIs trend over last 12 periods
+Chart 3: Pie/donut — % of KPIs Green / Yellow / Red
+
+EXECUTIVE SUMMARY BOX
+"At a Glance — [PERIOD]:"
+• [X] of [TOTAL] KPIs on track (Green)
+• [X] need attention (Yellow)
+• [X] off-track (Red)
+Top performer: [KPI NAME] at [X]% achievement
+Most improved: [KPI NAME], up [X]% vs last period
+Biggest risk: [KPI NAME] — [ACTION NEEDED]
+
+HISTORICAL DATA SHEET (Sheet 2):
+Same KPI rows, columns = each period (month or week)
+Allows trend analysis and sparkline source data
+
+Generate complete KPI list with realistic sample data for a [DEPARTMENT TYPE] team.
+
+======================================================================
+
+[EXCEL-09] Monthly Budget Tracker
+Slug: monthly-budget-tracker
+----------------------------------------------------------------------
+Create a detailed monthly budget tracker spreadsheet layout for [MONTH] [YEAR].
+Format this as explicit Excel/Google Sheets instructions with cell references and formulas.
+
+SHEET 1: DASHBOARD (Summary View)
+
+A1:G1 — HEADER: "Monthly Budget Tracker — [MONTH] [YEAR]"
+Merge A1:G1, bold, 18pt, background fill: [PRIMARY COLOR]
+
+INCOME SECTION (Row 3–10)
+A3: "INCOME" — bold, uppercase, [PRIMARY COLOR] font
+A4: "Primary Salary" | B4: [AMOUNT] | C4: formula =B4
+A5: "Freelance/Side Income" | B5: [AMOUNT] | C5: formula =B5
+A6: "Investments/Dividends" | B6: [AMOUNT]
+A7: "Other Income" | B7: [AMOUNT]
+A9: "TOTAL INCOME" — bold | B9: =SUM(B4:B8) — bold, green font
+A10: Thin separator line across row
+
+EXPENSE SECTION (Row 12–40)
+Organize into 6 categories with sub-items:
+
+ROW 12: "HOUSING" — category header, light gray background
+A13: Rent/Mortgage | B13: Budget | C13: Actual | D13: =C13-B13 (Variance) | E13: Progress bar formula
+A14: Utilities (electric, gas, water) | B14-E14: same columns
+A15: Internet & Phone | B15-E15: same
+A16: Home Insurance | B16-E16: same
+
+ROW 18: "FOOD & GROCERIES" — category header
+A19: Groceries | B19-E19: columns
+A20: Dining Out / Restaurants | B20-E20: columns
+A21: Coffee & Snacks | B21-E21: columns
+A22: Food Delivery | B22-E22: columns
+
+ROW 24: "TRANSPORTATION" — category header
+A25: Car Payment/Lease | B25-E25: columns
+A26: Gas / Fuel | B26-E26: columns
+A27: Public Transport | B27-E27: columns
+A28: Parking & Tolls | B28-E28: columns
+
+ROW 30: "LIFESTYLE & HEALTH" — category header
+A31: Gym / Fitness | B31-E31: columns
+A32: Subscriptions (Netflix, Spotify, etc.) | B32-E32: columns
+A33: Healthcare / Pharmacy | B33-E33: columns
+A34: Entertainment & Hobbies | B34-E34: columns
+A35: Clothing & Personal Care | B35-E35: columns
+
+ROW 37: "SAVINGS & INVESTMENTS" — category header
+A38: Emergency Fund | B38-E38: columns
+A39: Retirement / 401k | B39-E39: columns
+A40: Investment Account | B40-E40: columns
+
+ROW 42: "DEBT PAYMENTS" — category header
+A43: Credit Card 1 | B43-E43: columns
+A44: Credit Card 2 | B44-E44: columns
+A45: Student Loan | B45-E45: columns
+A46: Other Debt | B46-E46: columns
+
+TOTALS (Row 48–52)
+A48: "TOTAL EXPENSES" | B48: =SUM(all budget B columns) | C48: =SUM(all actual C columns)
+A49: "TOTAL INCOME" | B49: =reference to B9
+A50: "NET (Income - Expenses)" | B50: =B49-B48 | C50: =B49-C48
+Color rule: positive = green, negative = red (conditional formatting)
+
+SAVINGS RATE (Row 52)
+A52: "Savings Rate" | B52: =B40/B49 formatted as % | C52: =C40/C49 as %
+
+PROGRESS BARS (Column E throughout)
+E column: Use formula =REPT("█", (C/B)*10)&REPT("░", 10-(C/B)*10) for text progress bars
+Conditional formatting: if C > B (over budget): red fill | if C ≤ B×0.9: green | else: yellow
+
+SHEET 2: MONTHLY COMPARISON
+Columns A–M = January through December
+Row per budget category showing month-by-month spending
+Final column: "Annual Total" and "Monthly Average"
+Chart placeholder: Line chart showing monthly total expenses vs income over 12 months
+
+SHEET 3: SAVINGS GOALS
+Goal tracker for up to 5 savings goals
+Columns: Goal Name | Target Amount | Current Saved | % Complete | Target Date | Monthly Required
+Visual: Conditional formatting progress bar per goal
+
+Generate sample data for [INCOME AMOUNT] monthly income for a [LIFESTYLE TYPE] budget.
+
+======================================================================
+
+[EXCEL-10] Project Timeline Gantt Chart
+Slug: project-timeline-gantt
+----------------------------------------------------------------------
+Create a Gantt chart spreadsheet for [PROJECT NAME] with [DURATION] timeline.
+Team size: [TEAM SIZE]. Start date: [START DATE].
+
+SHEET SETUP:
+Column A: Task ID (T01, T02...) — width 40px
+Column B: Task Name — width 200px
+Column C: Owner — width 100px
+Column D: Start Date — width 80px
+Column E: End Date — width 80px
+Column F: Duration (days) — formula =E-D
+Column G: % Complete — width 80px, format as percentage
+Column H: Dependencies — width 80px (e.g., "T03, T05")
+Column I: Priority — width 70px (High/Med/Low)
+Columns J onward: Date headers (one column per week or day depending on [DURATION])
+
+DATE HEADER FORMAT:
+Row 1: Month names (merged across their weeks)
+Row 2: Week numbers or specific dates
+Color bands: alternate light gray / white per month
+
+GANTT BARS:
+In each date column, use conditional formatting:
+If that date falls between task Start and End date: fill with [PRIMARY COLOR] (task bar)
+If task % Complete is calculated: first [X]% of bar in darker [PRIMARY COLOR] (progress)
+Remaining bar: lighter tint of [PRIMARY COLOR]
+Milestones (0-day tasks): Diamond symbol ◆ in that date cell, different color
+
+PHASE GROUPINGS (use row grouping/outline):
+Phase 1: [PHASE 1 NAME] — rows grouped, collapsible
+Phase 2: [PHASE 2 NAME] — rows grouped, collapsible
+Phase 3: [PHASE 3 NAME] — rows grouped, collapsible
+
+GENERATE TASKS for [PROJECT TYPE] project:
+Create 15–20 realistic tasks organized into 3 phases with logical dependencies.
+Include 3 milestone rows (marked with ◆).
+
+SUMMARY ROW at top:
+Overall project: Start [DATE] | End [DATE] | % Complete: =average of all task %
+
+RESOURCE VIEW (separate sheet):
+Per team member: list their assigned tasks and workload per week.
+Highlight overloaded weeks (more than 5 tasks in one week) in red.
+
+COLOR CODE:
+Not started: light gray bar | In progress: [PRIMARY COLOR] | Complete: green | Overdue: red
+
+Generate 20 realistic tasks for a [PROJECT TYPE] project starting [START DATE].
+
+======================================================================
+
+[EXCEL-11] Sales Performance Dashboard
+Slug: sales-dashboard
+----------------------------------------------------------------------
+Create a sales performance dashboard spreadsheet for [COMPANY NAME], [PERIOD].
+Sales team size: [TEAM SIZE]. Currency: [CURRENCY].
+
+SHEET 1: EXECUTIVE DASHBOARD
+
+KPI TILES (Row 1–5, use merged cells for large display):
+Tile 1 (A1:C5): "Total Revenue" | Value: [AMOUNT] | vs Target: [% of target] | vs Last Period: [% change]
+Tile 2 (D1:F5): "Deals Closed" | Count | vs target | % change
+Tile 3 (G1:I5): "Win Rate" | Percentage | benchmark: [INDUSTRY BENCHMARK]%
+Tile 4 (J1:L5): "Average Deal Size" | Amount | trend arrow
+Tile 5 (M1:O5): "Sales Cycle" | X days | vs last period
+
+Style: Each tile has [PRIMARY COLOR] header row, large number in center (28pt bold), small metadata below.
+Conditional formatting: green if above target, red if below.
+
+PIPELINE FUNNEL (Row 7–18):
+Funnel stages with deal counts and values:
+Stage 1: Prospect — [X] deals — $[VALUE]
+Stage 2: Qualified — [X] deals — $[VALUE]
+Stage 3: Proposal — [X] deals — $[VALUE]
+Stage 4: Negotiation — [X] deals — $[VALUE]
+Stage 5: Closed Won — [X] deals — $[VALUE]
+Stage 6: Closed Lost — [X] deals — $[VALUE]
+
+Conversion rates between each stage (formula row).
+
+MONTHLY REVENUE CHART (Row 20–35):
+Data table: Month | Target Revenue | Actual Revenue | Variance | % Achievement
+Chart type: Combo — bars for actual, line for target
+Color: Blue bars, red target line
+
+SHEET 2: INDIVIDUAL PERFORMANCE
+Columns: Rep Name | Deals Assigned | Deals Closed | Revenue | Win Rate | Avg Deal | Pipeline Value | Rank
+Sort by: Revenue (descending)
+Conditional formatting: Top 3 rows green highlight, bottom 2 red highlight
+Sparkline column: mini trend chart of last 6 months performance per rep
+
+SHEET 3: PRODUCT/SERVICE BREAKDOWN
+Revenue by product line: pie chart + table
+Columns: Product | Deals | Revenue | % of Total | vs Last Period | Trend
+
+Generate realistic sample data for a [INDUSTRY] company with [TEAM SIZE] sales reps.
+
+======================================================================
+
+[EXCEL-12] Side Income & Hustle Tracker
+Slug: side-income-tracker
+----------------------------------------------------------------------
+Create a Side Income & Multiple Revenue Stream Tracker for Excel or Google Sheets.
+
+SHEET 1: INCOME STREAMS OVERVIEW
+
+STREAM SETUP TABLE (one row per income source):
+A: Stream Name
+B: Category (Freelance / Gig Economy / Digital Products / Investments / Rental / Content / Other)
+C: Platform (e.g., Upwork, Fiverr, Etsy, YouTube, Airbnb, Stock Market)
+D: Start Date
+E: Status (Active / Paused / Scaling / Winding Down)
+F: Monthly Revenue (this month)
+G: Monthly Expenses (this month)
+H: Monthly Net Profit (auto) =F-G
+I: Hours Invested (this month)
+J: True Hourly Rate (auto) =H/I
+K: Monthly Goal
+L: Goal Progress % (auto) =F/K
+M: Growth vs Last Month %
+N: Notes / Strategy
+
+CONDITIONAL FORMATTING:
+True Hourly Rate (J) < minimum wage → red | above $50/hr → green | between → yellow
+Status (E): Active = green | Scaling = blue | Paused = gray | Winding Down = orange
+
+TOTAL ROW:
+Total Monthly Revenue: =SUM(F:F)
+Total Monthly Net: =SUM(H:H)
+Total Hours: =SUM(I:I)
+Blended Hourly Rate: =SUM(H:H)/SUM(I:I)
+
+SHEET 2: MONTHLY LEDGER (detailed transactions)
+
+One row per income event:
+A: Date
+B: Stream Name (dropdown from Sheet1)
+C: Client / Customer / Source
+D: Description / Project
+E: Gross Amount
+F: Platform Fee / Commission
+G: Net Amount (auto) =E-F
+H: Tax Withholding (%) | I: Tax Amount (auto)
+J: After-Tax Amount (auto) =G-I
+K: Payment Method (PayPal/Bank/Cash/Crypto)
+L: Payment Status (Pending/Received/Invoiced)
+M: Invoice # (if applicable)
+N: Category (for tax purposes)
+
+EXPENSE LOG (below income):
+Date | Stream | Expense Type | Amount | Tax Deductible (Yes/No) | Receipt #
+
+SHEET 3: TIME INVESTMENT TRACKER
+
+Weekly time log:
+A: Week Starting
+B: Stream Name
+C: Task Type (Client Work / Marketing / Admin / Learning / Content Creation)
+D: Hours Spent
+E: Revenue Generated This Session
+F: Hourly Rate This Session
+G: Notes
+
+Monthly time summary per stream:
+Total hours | Revenue generated | ROI per hour | % of total time
+
+"Time is Money" Analysis:
+Which streams have the highest $/hour?
+Which streams take the most time for least return?
+
+SHEET 4: GROWTH & FORECAST
+
+MONTHLY SUMMARY TABLE (running 12 months):
+Month | Total Revenue | Total Expenses | Net Profit | Hours | Hourly Rate | YoY Growth
+
+ANNUAL PROJECTIONS:
+- At current monthly average: =monthly_avg*12
+- At 10% monthly growth rate: compound projection
+- Goal: $[INCOME_GOAL] annual — months to reach: =calculated
+
+INCOME MILESTONES:
+$500/month ✓/✗ | $1,000/month | $2,000/month | $5,000/month | Full-time income
+
+LINE CHART: Monthly revenue per stream stacked over time
+BAR CHART: Hours vs Revenue comparison by stream
+
+SHEET 5: TAX PREP SUMMARY
+
+Quarterly tax estimates:
+Self-employment income total | SE tax (15.3%) | Federal estimated tax | State estimated tax
+Quarterly payment due dates (Apr 15, Jun 15, Sep 15, Jan 15)
+Deductible business expenses by category
+Estimated annual tax bill
+
+Generate this tracker for [NUMBER] income streams:
+[STREAM_LIST]
+with a monthly revenue goal of $[MONTHLY_GOAL].
+
+======================================================================
+
+[EXCEL-13] Global Stock Market Dashboard
+Slug: stock-market-dashboard
+----------------------------------------------------------------------
+Create a Global Stock Market Dashboard for Google Sheets using GOOGLEFINANCE formulas
+for live real-time data.
+
+NOTE: All price formulas use GOOGLEFINANCE() — Google Sheets only, no Excel.
+
+SHEET 1: 🇺🇸 US MARKETS
+
+MARKET INDICES (Rows 1–8):
+A1: "US Market Indices" — bold header, dark blue background
+A2: "Index" | B2: "Price" | C2: "Change" | D2: "Change %" | E2: "52W High" | F2: "52W Low"
+A3: "S&P 500" | B3: =GOOGLEFINANCE("INDEXSP:.INX","price") | C3: =GOOGLEFINANCE("INDEXSP:.INX","change") | D3: =GOOGLEFINANCE("INDEXSP:.INX","changepct")/100 | ...
+A4: "NASDAQ" | B4: =GOOGLEFINANCE("INDEXNASDAQ:.IXIC","price") | ...
+A5: "Dow Jones" | B5: =GOOGLEFINANCE("INDEXDJX:.DJI","price") | ...
+A6: "Russell 2000" | B6: =GOOGLEFINANCE("INDEXRUSSELL:RUT","price") | ...
+A7: "VIX (Fear Index)" | B7: =GOOGLEFINANCE("INDEXCBOE:VIX","price") | ...
+
+CONDITIONAL FORMATTING (Change % column):
+Positive % → green fill (darker = more positive)
+Negative % → red fill (darker = more negative)
+Zero → white
+
+SECTOR GROUPS (Row 10 onward, each sector in colored block):
+
+🖥️ TECHNOLOGY SECTOR (light blue background):
+Columns: A=Ticker | B=Company | C=Price | D=Change% | E=Market Cap | F=P/E | G=52W Perf
+AAPL | Apple | =GOOGLEFINANCE("AAPL","price") | =GOOGLEFINANCE("AAPL","changepct")/100 | ...
+MSFT | Microsoft | =GOOGLEFINANCE("MSFT","price") | ...
+GOOGL | Alphabet | =GOOGLEFINANCE("GOOGL","price") | ...
+NVDA | NVIDIA | =GOOGLEFINANCE("NVDA","price") | ...
+META | Meta | =GOOGLEFINANCE("META","price") | ...
+AMZN | Amazon | =GOOGLEFINANCE("AMZN","price") | ...
+TSLA | Tesla | =GOOGLEFINANCE("TSLA","price") | ...
+CRM | Salesforce | =GOOGLEFINANCE("CRM","price") | ...
+
+💰 FINANCE SECTOR (light green background):
+JPM | JPMorgan Chase | =GOOGLEFINANCE("JPM","price") | ...
+BAC | Bank of America | =GOOGLEFINANCE("BAC","price") | ...
+GS | Goldman Sachs | =GOOGLEFINANCE("GS","price") | ...
+V | Visa | =GOOGLEFINANCE("V","price") | ...
+BRK.B | Berkshire Hathaway | =GOOGLEFINANCE("BRK.B","price") | ...
+
+🏥 HEALTHCARE SECTOR (light purple background):
+JNJ | Johnson & Johnson | =GOOGLEFINANCE("JNJ","price") | ...
+UNH | UnitedHealth | =GOOGLEFINANCE("UNH","price") | ...
+PFE | Pfizer | =GOOGLEFINANCE("PFE","price") | ...
+ABBV | AbbVie | =GOOGLEFINANCE("ABBV","price") | ...
+
+⚡ ENERGY SECTOR (light yellow background):
+XOM | ExxonMobil | =GOOGLEFINANCE("XOM","price") | ...
+CVX | Chevron | =GOOGLEFINANCE("CVX","price") | ...
+
+🛒 CONSUMER SECTOR (light orange background):
+WMT | Walmart | =GOOGLEFINANCE("WMT","price") | ...
+COST | Costco | =GOOGLEFINANCE("COST","price") | ...
+MCD | McDonald's | =GOOGLEFINANCE("MCD","price") | ...
+
+SECTOR SUMMARY TABLE:
+Each sector's average daily change % — best and worst sector highlighted
+
+SHEET 2: 🇯🇵 JAPAN MARKETS
+
+INDICES:
+Nikkei 225: =GOOGLEFINANCE("INDEXNIKKEI:NI225","price")
+TOPIX: =GOOGLEFINANCE("TYO:TOPIX","price") [Note: may use alternative]
+
+MAJOR STOCKS by sector (Toyota exchange code: TYO:7203):
+
+🚗 AUTO & MANUFACTURING:
+TYO:7203 | Toyota Motor | =GOOGLEFINANCE("TYO:7203","price") | ...
+TYO:7267 | Honda Motor | =GOOGLEFINANCE("TYO:7267","price") | ...
+TYO:7751 | Canon | ...
+TYO:6758 | Sony Group | =GOOGLEFINANCE("TYO:6758","price") | ...
+
+💻 TECH & TELECOM:
+TYO:9984 | SoftBank Group | =GOOGLEFINANCE("TYO:9984","price") | ...
+TYO:6861 | Keyence | ...
+TYO:7974 | Nintendo | =GOOGLEFINANCE("TYO:7974","price") | ...
+TYO:6501 | Hitachi | ...
+
+🏦 FINANCE:
+TYO:8306 | Mitsubishi UFJ | =GOOGLEFINANCE("TYO:8306","price") | ...
+TYO:8316 | Sumitomo Mitsui | ...
+
+SHEET 3: 🇰🇷 KOREA MARKETS
+
+INDICES:
+KOSPI: =GOOGLEFINANCE("KRX:KOSPI","price") [Note: limited GOOGLEFINANCE support]
+KOSDAQ: =GOOGLEFINANCE("KRX:KOSDAQ","price")
+
+NOTE: Korean stocks may require manual price entry or use Yahoo Finance import
+as GOOGLEFINANCE has limited KRX coverage.
+
+MAJOR STOCKS (KRX codes):
+KRX:005930 | Samsung Electronics
+KRX:000660 | SK Hynix
+KRX:035420 | NAVER
+KRX:035720 | Kakao
+KRX:005380 | Hyundai Motor
+KRX:006400 | Samsung SDI
+KRX:051910 | LG Chem
+KRX:000270 | Kia
+
+SHEET 4: 🇨🇳 CHINA / HK MARKETS
+
+INDICES:
+Shanghai Composite: =GOOGLEFINANCE("SHA:000001","price")
+Hang Seng (HK): =GOOGLEFINANCE("INDEXHANGSENG:HSI","price")
+
+HONG KONG LISTED (HKG — best GOOGLEFINANCE support):
+HKG:0700 | Tencent Holdings | =GOOGLEFINANCE("HKG:0700","price") | ...
+HKG:9988 | Alibaba (HK) | =GOOGLEFINANCE("HKG:9988","price") | ...
+HKG:2318 | Ping An Insurance | ...
+HKG:1211 | BYD Company | =GOOGLEFINANCE("HKG:1211","price") | ...
+HKG:0941 | China Mobile | ...
+HKG:3690 | Meituan | =GOOGLEFINANCE("HKG:3690","price") | ...
+
+US-LISTED CHINESE ADRs (full GOOGLEFINANCE support):
+BABA | Alibaba ADR | =GOOGLEFINANCE("BABA","price") | ...
+PDD | PDD Holdings | =GOOGLEFINANCE("PDD","price") | ...
+BIDU | Baidu | =GOOGLEFINANCE("BIDU","price") | ...
+NIO | NIO Inc | =GOOGLEFINANCE("NIO","price") | ...
+
+SHEET 5: PORTFOLIO TRACKER (Optional)
+
+A: Ticker | B: Market | C: Shares Owned | D: Avg Buy Price | E: Current Price (GOOGLEFINANCE)
+F: Current Value | G: Gain/Loss | H: Gain/Loss % | I: % of Portfolio
+
+Portfolio total: =SUMPRODUCT(C:C,E:E)
+Chart: Portfolio allocation pie chart
+
+Set up this dashboard with all 4 market sheets, sector color coding,
+and conditional formatting for gains (green) and losses (red).
+
+======================================================================
+
+[EXCEL-14] Student GPA Calculator & Grade Tracker
+Slug: student-gpa-calculator
+----------------------------------------------------------------------
+Create a Student GPA Calculator & Academic Grade Tracker for Excel or Google Sheets.
+
+SHEET 1: CURRENT SEMESTER GRADES
+
+STUDENT INFO (Rows 1–5):
+A1: "Student Name:" | B1: [STUDENT_NAME]
+A2: "School / University:" | B2: [SCHOOL]
+A3: "Major / Program:" | B3: [MAJOR]
+A4: "Semester:" | B4: [SEMESTER] (e.g., "Spring 2026")
+A5: "GPA Scale:" | B5: [GPA_SCALE] (4.0 / 5.0 / 100-point)
+
+GRADE SCALE REFERENCE (Rows 7–17, floating table):
+Letter | Min % | Max % | GPA Points (4.0 scale)
+A+     | 97    | 100   | 4.0
+A      | 93    | 96    | 4.0
+A-     | 90    | 92    | 3.7
+B+     | 87    | 89    | 3.3
+B      | 83    | 86    | 3.0
+B-     | 80    | 82    | 2.7
+C+     | 77    | 79    | 2.3
+C      | 73    | 76    | 2.0
+C-     | 70    | 72    | 1.7
+D      | 60    | 69    | 1.0
+F      | 0     | 59    | 0.0
+
+COURSE GRADE TABLE (Rows 20 onward):
+A: Course Name
+B: Course Code
+C: Credit Hours
+D: Category (Core / Elective / Major / General Ed)
+E: Midterm Score (%)
+F: Midterm Weight (%)
+G: Final Exam Score (%)
+H: Final Weight (%)
+I: Assignment / Project Score (%)
+J: Assignment Weight (%)
+K: Participation Score (%)
+L: Participation Weight (%)
+M: Current Grade % (auto) =weighted average of E,G,I,K by weights F,H,J,L
+N: Current Letter Grade (auto) =IFS(M>=97,"A+",M>=93,"A",M>=90,"A-",M>=87,"B+",...)
+O: GPA Points (auto) =VLOOKUP(N,GradeScale,3,FALSE)
+P: Grade Points Earned (auto) =C*O
+Q: Target Final Grade (what I want to end up with)
+
+SEMESTER GPA (bottom summary):
+Total Credit Hours: =SUM(C:C)
+Total Grade Points: =SUM(P:P)
+Semester GPA: =SUM(P:P)/SUM(C:C)  [formatted to 2 decimal places]
+Highest Grade: =MAX(M:M) | Lowest Grade: =MIN(M:M)
+Credits at Risk (grade < 70%): =COUNTIF(M:M,"<70")
+
+SHEET 2: CUMULATIVE GPA TRACKER
+
+One row per semester (all past semesters):
+A: Semester (e.g., "Fall 2024")
+B: Credits Attempted
+C: Credits Earned
+D: Quality Points (Grade Points × Credits)
+E: Semester GPA
+F: Cumulative GPA (running) =SUM($D$2:D2)/SUM($B$2:B2)
+G: Standing (Freshman/Sophomore/Junior/Senior based on total credits)
+H: Dean's List? (Yes if GPA ≥ 3.5)
+I: Notes (e.g., "COVID semester", "Part-time", "Study abroad")
+
+CHART: Line chart — Semester GPA vs Cumulative GPA over time
+
+SHEET 3: WHAT-IF GRADE SIMULATOR
+
+For each current course, calculate:
+"What score do I need on the final exam to get [TARGET_GRADE]?"
+
+Formula:
+Required Final Score = (Target Grade% - Current Grade%×(100-FinalWeight)%) / FinalWeight%
+
+Table columns:
+A: Course
+B: Current Grade %
+C: Final Exam Weight %
+D: Target Grade (dropdown: A/A-/B+/B/B-/C)
+E: Required Final Score % (auto)
+F: Is It Achievable? (auto: Yes if ≤100%, Tough if 90–100%, No if >100%)
+
+CONDITIONAL FORMATTING (Column F):
+"Yes" → green | "Tough" → yellow | "No" → red
+
+SHEET 4: ASSIGNMENT TRACKER (per course)
+
+For your [SUBJECT] course:
+A: Assignment Name
+B: Type (Homework/Quiz/Midterm/Project/Final)
+C: Date Assigned
+D: Due Date
+E: Days Until Due (auto) =D-TODAY()
+F: Max Points
+G: Points Earned
+H: Grade % (auto)
+I: Weight in Final Grade %
+J: Weighted Contribution (auto) =H*I
+K: Status (Upcoming/Submitted/Graded)
+L: Notes
+
+Running grade in this course: =SUMPRODUCT(H,I)/SUM(I) of graded items
+
+SHEET 5: GPA GOAL PLANNER
+
+Target Cumulative GPA: [TARGET_GPA]
+Current Cumulative GPA: [CURRENT_GPA]
+Credits Completed: [CREDITS_DONE]
+
+Calculate: Minimum semester GPA needed for next [N] semesters to reach target:
+=(TARGET_GPA × (CREDITS_DONE + future_credits) - current_quality_points) / future_credits
+
+Generate this tracker for a [YEAR] year [MAJOR] student at [SCHOOL]
+with a current cumulative GPA of [CURRENT_GPA] and a target GPA of [TARGET_GPA].
+Include [NUMBER] courses for the current semester.
+
+======================================================================
+
+[EXCEL-15] Subscription Expense Audit
+Slug: subscription-audit
+----------------------------------------------------------------------
+Create a Subscription Expense Audit spreadsheet for Excel or Google Sheets.
+
+SHEET 1: SUBSCRIPTION INVENTORY
+
+Header Row:
+A1: Service Name
+B1: Category
+C1: Monthly Cost
+D1: Annual Cost (auto)
+E1: Billing Cycle (Monthly/Annual/Weekly)
+F1: Billing Date
+G1: Payment Method
+H1: Last Used (date)
+I1: Days Since Last Use (auto)
+J1: Usage Frequency (Daily/Weekly/Monthly/Rarely/Never)
+K1: Value Score (1–5)
+L1: Cancel Recommendation
+M1: Cancel By Date
+N1: Notes
+
+FORMULAS:
+D2: =IF(E2="Annual",C2,IF(E2="Weekly",C2*52,C2*12))
+I2: =IF(H2="","-",TODAY()-H2)
+L2: =IF(AND(J2="Never",K2<=2),"CANCEL NOW",IF(AND(J2="Rarely",K2<=3),"Consider Canceling","Keep"))
+
+CONDITIONAL FORMATTING (Column L):
+"CANCEL NOW" → red fill, white bold text
+"Consider Canceling" → orange fill
+"Keep" → green fill
+
+CATEGORIES (Column B dropdown):
+Streaming | Music | Gaming | News/Media | Productivity | Health/Fitness |
+Cloud Storage | Security | Food/Delivery | Shopping | Finance | Other
+
+SHEET 2: SUMMARY DASHBOARD
+
+TOTAL COSTS:
+B2: "Monthly Subscription Spend" | C2: =SUMIF(Sheet1!E:E,"Monthly",Sheet1!C:C)+SUMIF(Sheet1!E:E,"Annual",Sheet1!D:D)/12
+B3: "Annual Subscription Spend" | C3: =SUM(Sheet1!D:D)
+B4: "Potential Monthly Savings (cancel recommended)" | C4: [SUMIF on Cancel column]
+B5: "Potential Annual Savings" | C5: =C4*12
+B6: "Number of Subscriptions" | C6: =COUNTA(Sheet1!A2:A100)
+B7: "Cancel Recommended Count" | C7: =COUNTIF(Sheet1!L:L,"CANCEL NOW")
+
+CATEGORY BREAKDOWN TABLE:
+For each category: Total Monthly | Total Annual | Count | % of Spend
+
+Pie chart placeholder: Spend by category
+Bar chart: Monthly cost per service (top 10, descending)
+
+SHEET 3: CANCELLATION ACTION LIST
+
+Auto-filtered view of all subscriptions marked "CANCEL NOW" or "Consider Canceling":
+A: Service Name
+B: Monthly Cost
+C: Annual Cost
+D: How to Cancel (link/notes)
+E: Cancellation Status (Pending/Cancelled/Kept)
+F: Date Cancelled
+G: Confirmed Savings
+
+SHEET 4: SUBSCRIPTION WISH LIST
+
+Services you're considering adding:
+A: Service Name
+B: Monthly Cost
+C: What You'd Use It For
+D: Priority (High/Medium/Low)
+E: Better Alternative?
+F: Decision
+
+Generate a realistic sample dataset with [NUMBER] subscriptions
+across multiple categories for a [LIFESTYLE TYPE] person spending approximately
+$[MONTHLY_AMOUNT] per month on subscriptions.
+
+======================================================================
+
+[EXCEL-16] Travel Budget Planner
+Slug: travel-budget-planner
+----------------------------------------------------------------------
+Create a Travel Budget Planner for Google Sheets (uses GOOGLEFINANCE for live exchange rates).
+
+NOTE: This spreadsheet uses GOOGLEFINANCE() formula — works in Google Sheets only.
+For Excel, use manual exchange rate entry instead.
+
+SHEET 1: TRIP OVERVIEW
+
+TRIP HEADER (Rows 1–5):
+A1: "Trip Name:" | B1: [DESTINATION]
+A2: "Departure Date:" | B2: [START_DATE]
+A3: "Return Date:" | B3: [END_DATE]
+A4: "Duration (days):" | B4: =B3-B2
+A5: "Travel Party Size:" | B5: [NUMBER_OF_PEOPLE]
+
+CURRENCY SETUP (Rows 7–12):
+A7: "Home Currency:" | B7: [HOME_CURRENCY] (e.g., USD, KRW, JPY)
+A8: "Destination Currency:" | B8: [DEST_CURRENCY]
+A9: "Live Exchange Rate:" | B9: =GOOGLEFINANCE("CURRENCY:"&B7&B8)
+A10: "Rate Updated:" | B10: =NOW()
+A11: "Manual Override Rate:" | B11: (leave blank to use live rate)
+A12: "Effective Rate:" | B12: =IF(B11="",B9,B11)
+
+BUDGET CATEGORIES (Rows 14–35):
+Columns: A=Category | B=Item | C=Budget (home currency) | D=Budget (dest currency, auto) |
+         E=Actual Spent (dest currency) | F=Actual Spent (home currency, auto) | G=Variance
+
+D formula: =C14/Sheet1!$B$12
+F formula: =E14*Sheet1!$B$12
+G formula: =C14-F14 (positive=under budget, negative=over)
+
+CATEGORIES AND ITEMS:
+✈ FLIGHTS
+- Round-trip airfare
+- Luggage fees
+- Travel insurance
+
+🏨 ACCOMMODATION
+- Hotel/Airbnb (per night × nights)
+- Taxes & resort fees
+- Parking
+
+🚗 TRANSPORTATION
+- Airport transfers
+- Local transport (subway/bus pass)
+- Car rental / fuel
+- Taxis / rideshare
+
+🍜 FOOD & DRINK
+- Breakfast (budget × days)
+- Lunch (budget × days)
+- Dinner (budget × days)
+- Coffee & snacks
+- Grocery / convenience store
+- Special dining / fine dining
+
+🎡 ACTIVITIES & ENTERTAINMENT
+- Museum / attraction tickets
+- Tours & experiences
+- Shows / events
+- Sports activities
+
+🛍 SHOPPING
+- Souvenirs / gifts
+- Clothing
+- Personal items
+
+🏥 EMERGENCY FUND
+- Medical (10% of total budget)
+- Unexpected expenses
+
+TOTALS (Row 36–40):
+A36: "TOTAL BUDGET" | C36: =SUM(C14:C35) | D36: =SUM(D14:D35)
+A37: "TOTAL SPENT" | F37: =SUM(F14:F35)
+A38: "REMAINING" | C38: =C36-F37
+A39: "Budget per Person per Day" | C39: =C36/B4/B5
+A40: "Actual per Person per Day" | C40: =F37/B4/B5
+
+SHEET 2: DAY-BY-DAY LOG
+
+Columns per day entry:
+A: Date
+B: Day #
+C: Category
+D: Item / Description
+E: Amount (local currency)
+F: Amount (home currency, auto-converted)
+G: Payment Method
+H: Receipt # / Notes
+
+Running total at top: Today's spend | Trip total to date | Budget remaining
+
+SHEET 3: MULTI-TRIP COMPARISON
+
+Compare up to 5 past/planned trips:
+Rows: each trip | Columns: destination, dates, total cost, cost/day, cost/person/day
+Chart: bar chart comparing total trip costs
+
+Generate a detailed travel budget for a [DURATION]-day trip to [DESTINATION]
+for [NUMBER_OF_PEOPLE] people with a total budget of [BUDGET_AMOUNT] [CURRENCY].
+Include realistic cost estimates for a [TRAVEL_STYLE] travel style.
+
+======================================================================
+
+[EXCEL-17] Wedding & Event Budget Planner
+Slug: wedding-event-planner
+----------------------------------------------------------------------
+Create a Wedding & Special Event Budget Planner for Excel or Google Sheets.
+(Works for weddings, engagement parties, corporate events, birthday galas, etc.)
+
+SHEET 1: BUDGET DASHBOARD
+
+EVENT HEADER (Rows 1–6):
+A1: "Event Name:" | B1: [EVENT_NAME]
+A2: "Event Date:" | B2: [EVENT_DATE]
+A3: "Venue:" | B3: [VENUE]
+A4: "Total Budget:" | B4: [TOTAL_BUDGET]
+A5: "Guest Count:" | B5: [GUEST_COUNT]
+A6: "Cost Per Guest:" | B6: =B4/B5
+
+BUDGET OVERVIEW TABLE:
+Category | Budgeted | Contracted | Paid | Remaining | % of Budget | Over/Under
+
+Categories (with typical % allocation for reference):
+🏛 VENUE & SPACE (25–30%)
+📸 PHOTOGRAPHY & VIDEO (10–12%)
+🎵 MUSIC & ENTERTAINMENT (8–10%)
+🌸 FLOWERS & DÉCOR (8–12%)
+🍽 CATERING & CAKE (35–40%)
+💌 STATIONERY & PAPER (2–3%)
+👗 ATTIRE & BEAUTY (8–10%)
+💍 RINGS & JEWELRY (3–5%)
+🚗 TRANSPORTATION (2–3%)
+🏨 ACCOMMODATIONS (3–5%)
+🎁 FAVORS & GIFTS (2–3%)
+📋 PLANNING & ADMIN (2%)
+💰 CONTINGENCY FUND (5–10%)
+
+TOTAL ROW:
+Total Budgeted: =SUM(Budgeted column)
+Total Paid: =SUM(Paid column)
+Total Remaining to Pay: =SUM(Contracted-Paid)
+Budget Surplus / Deficit: =B4-Total Contracted
+
+GAUGE CHART: Visual budget thermometer showing % spent
+
+SHEET 2: VENDOR TRACKER
+
+One row per vendor:
+A: Category (from budget categories)
+B: Vendor / Company Name
+C: Contact Person
+D: Phone | E: Email | F: Website
+G: Service Description
+H: Quoted Price
+I: Final Contracted Price
+J: Deposit Due Date | K: Deposit Amount | L: Deposit Paid (Yes/No)
+M: Final Payment Date | N: Balance Due (auto) =I-K
+O: Contract Signed (Yes/No)
+P: Insurance / License Verified (Yes/No)
+Q: Status (Researching/Quoted/Booked/Confirmed/Completed)
+R: Review Rating (1–5 post-event)
+S: Notes
+
+CONDITIONAL FORMATTING:
+Status "Booked" = green | "Researching" = gray | "Quoted" = yellow
+Deposit not paid by due date = red alert
+Contract not signed for booked vendors = orange
+
+PAYMENT TIMELINE (mini calendar):
+Sorted list of all payment due dates across all vendors
+
+SHEET 3: GUEST LIST & RSVP
+
+A: # (guest number)
+B: First Name | C: Last Name
+D: Group / Relationship (Family/Friend/Work/Partner's Family)
+E: Side (Partner A / Partner B / Mutual) — for weddings
+F: Meal Choice (dropdown: Chicken/Fish/Vegetarian/Kids/None)
+G: Dietary Restrictions
+H: Plus One? (Yes/No) | I: Plus One Name
+J: Address (for invitations)
+K: Invitation Sent (Yes/No) | L: Date Sent
+M: RSVP Status (Awaiting/Attending/Declined/Maybe)
+N: RSVP Date Received
+O: Table # (from seating chart)
+P: Thank You Card Sent (Yes/No)
+Q: Gift Received | R: Gift Description
+S: Notes
+
+RSVP SUMMARY:
+Total Invited | Attending | Declined | Awaiting | Attending %
+Total Vegetarian/Vegan meals | Total Kids meals | Total meals needed
+
+SHEET 4: TIMELINE & CHECKLIST
+
+12 months before:
+□ Set total budget and contribution splits
+□ Choose wedding date and backup date
+□ Book venue
+□ Hire wedding planner (if using)
+□ Create initial guest list
+
+9 months before: [items]
+6 months before: [items]
+3 months before: [items]
+1 month before: [items]
+1 week before: [items]
+Day before / Day of: [items]
+Post-event: thank you cards, vendor reviews, legal name change, honeymoon
+
+Each task: checkbox | Category | Owner (Partner A/B/Planner) | Due Date | Done Date
+
+SHEET 5: HONEYMOON / AFTER-PARTY BUDGET
+
+Separate mini-budget for honeymoon:
+Same category structure: Flights, Accommodation, Activities, Food, Shopping, Emergency
+With destination currency conversion
+
+Generate this planner for a [EVENT_TYPE] for [GUEST_COUNT] guests
+with a total budget of $[TOTAL_BUDGET] on [EVENT_DATE] at [VENUE_TYPE].
+
+======================================================================

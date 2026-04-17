@@ -22,6 +22,7 @@ export interface Prompt {
   tips: string;
   variables: string;
   date: string;
+  image?: string;
 }
 
 export const CATEGORIES: Category[] = [
@@ -94,6 +95,7 @@ export function getAllPrompts(): Prompt[] {
         tips: data.tips || '',
         variables: data.variables || '',
         date: data.date || '',
+        image: data.image || undefined,
       });
     }
   }

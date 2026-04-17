@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import CopyButton from '@/components/CopyButton';
 import AdUnit from '@/components/AdUnit';
 import PromptCard from '@/components/PromptCard';
@@ -57,6 +58,20 @@ export default async function PromptPage({ params }: Props) {
         <span>/</span>
         <span className="text-gray-700 font-medium truncate">{prompt.title}</span>
       </nav>
+
+      {/* Preview Image */}
+      {prompt.image && (
+        <div className="relative w-full rounded-2xl overflow-hidden mb-6 border border-gray-100 shadow-sm" style={{aspectRatio:'16/7'}}>
+          <Image
+            src={prompt.image}
+            alt={`${prompt.title} preview`}
+            fill
+            className="object-cover"
+            unoptimized
+            priority
+          />
+        </div>
+      )}
 
       {/* Title */}
       <div className="mb-6">
