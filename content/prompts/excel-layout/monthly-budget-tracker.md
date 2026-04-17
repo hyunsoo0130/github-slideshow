@@ -4,6 +4,7 @@ description: "Generate a complete monthly budget tracker spreadsheet layout with
 tool: "claude"
 tags: ["budget", "tracker", "excel", "spreadsheet", "personal finance", "monthly"]
 date: "2026-04-01"
+image: "/images/prompts/excel-layout/monthly-budget-tracker.svg"
 promptText: |
   Create a detailed monthly budget tracker spreadsheet layout for [MONTH] [YEAR].
   Format this as explicit Excel/Google Sheets instructions with cell references and formulas.

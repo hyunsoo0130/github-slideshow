@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="420" fill="#f8fafc"/>
+  <rect width="800" height="46" fill="#7c3aed"/>
+  <text x="20" y="28" fill="#fff" font-size="16" font-weight="bold">KPI Metrics Tracker — Q1 2026</text>
+  <text x="20" y="42" fill="#ddd6fe" font-size="10">Business Performance  |  4 Departments  |  12 KPIs  |  Updated: Apr 17, 2026</text>
+
+  <!-- KPI grid 2x2 -->
+  <rect y="46" width="400" height="100" fill="#ede9fe"/>
+  <rect y="46" width="400" height="28" fill="#6d28d9"/>
+  <text x="16" y="65" fill="#ddd6fe" font-size="11" font-weight="bold">📈 REVENUE</text>
+  <text x="16" y="95" fill="#4c1d95" font-size="12">Monthly Recurring Revenue</text>
+  <text x="16" y="115" fill="#7c3aed" font-size="22" font-weight="bold">$284,500</text>
+  <text x="220" y="115" fill="#22c55e" font-size="11">▲ +8.2% MoM</text>
+  <rect x="16" y="125" width="360" height="10" rx="5" fill="#c4b5fd"/>
+  <rect x="16" y="125" width="295" height="10" rx="5" fill="#7c3aed"/>
+  <text x="320" y="134" fill="#6d28d9" font-size="9">Target: $310K</text>
+
+  <rect x="400" y="46" width="400" height="100" fill="#ecfdf5"/>
+  <rect x="400" y="46" width="400" height="28" fill="#15803d"/>
+  <text x="416" y="65" fill="#bbf7d0" font-size="11" font-weight="bold">👥 CUSTOMER</text>
+  <text x="416" y="95" fill="#064e3b" font-size="12">Customer Acquisition Cost</text>
+  <text x="416" y="115" fill="#15803d" font-size="22" font-weight="bold">$142</text>
+  <text x="530" y="115" fill="#22c55e" font-size="11">▼ -$18 (good!)</text>
+  <rect x="416" y="125" width="360" height="10" rx="5" fill="#a7f3d0"/>
+  <rect x="416" y="125" width="230" height="10" rx="5" fill="#22c55e"/>
+  <text x="720" y="134" fill="#065f46" font-size="9">Target: $120</text>
+
+  <rect y="146" width="400" height="100" fill="#eff6ff"/>
+  <rect y="146" width="400" height="28" fill="#1d4ed8"/>
+  <text x="16" y="165" fill="#bfdbfe" font-size="11" font-weight="bold">🔄 OPERATIONS</text>
+  <text x="16" y="195" fill="#1e3a8a" font-size="12">Customer Churn Rate</text>
+  <text x="16" y="215" fill="#1d4ed8" font-size="22" font-weight="bold">2.4%</text>
+  <text x="130" y="215" fill="#22c55e" font-size="11">▼ Better (was 3.1%)</text>
+  <rect x="16" y="225" width="360" height="10" rx="5" fill="#bfdbfe"/>
+  <rect x="16" y="225" width="87" height="10" rx="5" fill="#1d4ed8"/>
+  <text x="320" y="234" fill="#1e3a8a" font-size="9">Target: &lt;2%</text>
+
+  <rect x="400" y="146" width="400" height="100" fill="#fff7ed"/>
+  <rect x="400" y="146" width="400" height="28" fill="#c2410c"/>
+  <text x="416" y="165" fill="#fed7aa" font-size="11" font-weight="bold">⭐ SATISFACTION</text>
+  <text x="416" y="195" fill="#7c2d12" font-size="12">Net Promoter Score (NPS)</text>
+  <text x="416" y="215" fill="#c2410c" font-size="22" font-weight="bold">67</text>
+  <text x="490" y="215" fill="#f59e0b" font-size="11">→ Stable (+2 pts)</text>
+  <rect x="416" y="225" width="360" height="10" rx="5" fill="#fed7aa"/>
+  <rect x="416" y="225" width="270" height="10" rx="5" fill="#f97316"/>
+  <text x="720" y="234" fill="#92400e" font-size="9">Target: 75</text>
+
+  <!-- KPI detail table -->
+  <rect y="246" width="800" height="26" fill="#1e293b"/>
+  <text x="16" y="264" fill="#94a3b8" font-size="10" font-weight="bold">KPI Name</text>
+  <text x="200" y="264" fill="#94a3b8" font-size="10" font-weight="bold">Dept</text>
+  <text x="280" y="264" fill="#94a3b8" font-size="10" font-weight="bold">Target</text>
+  <text x="360" y="264" fill="#94a3b8" font-size="10" font-weight="bold">Jan</text>
+  <text x="420" y="264" fill="#94a3b8" font-size="10" font-weight="bold">Feb</text>
+  <text x="480" y="264" fill="#94a3b8" font-size="10" font-weight="bold">Mar</text>
+  <text x="540" y="264" fill="#94a3b8" font-size="10" font-weight="bold">Trend</text>
+  <text x="640" y="264" fill="#94a3b8" font-size="10" font-weight="bold">Status</text>
+
+  <rect y="272" width="800" height="22" fill="#fff"/>
+  <text x="16" y="287" fill="#1e293b" font-size="10">Monthly Revenue ($K)</text>
+  <text x="200" y="287" fill="#64748b" font-size="10">Sales</text>
+  <text x="280" y="287" fill="#1e293b" font-size="10">$310K</text>
+  <text x="360" y="287" fill="#1e293b" font-size="10">$248</text>
+  <text x="420" y="287" fill="#1e293b" font-size="10">$263</text>
+  <text x="480" y="287" fill="#1e293b" font-size="10">$284</text>
+  <text x="540" y="287" fill="#22c55e" font-size="14">↗</text>
+  <rect x="636" y="277" width="60" height="14" rx="7" fill="#fef9c3"/>
+  <text x="666" y="288" fill="#92400e" font-size="9" text-anchor="middle">On Track</text>
+
+  <rect y="294" width="800" height="22" fill="#f8fafc"/>
+  <text x="16" y="309" fill="#1e293b" font-size="10">CAC ($)</text>
+  <text x="200" y="309" fill="#64748b" font-size="10">Marketing</text>
+  <text x="280" y="309" fill="#1e293b" font-size="10">$120</text>
+  <text x="360" y="309" fill="#1e293b" font-size="10">$178</text>
+  <text x="420" y="309" fill="#1e293b" font-size="10">$156</text>
+  <text x="480" y="309" fill="#1e293b" font-size="10">$142</text>
+  <text x="540" y="309" fill="#22c55e" font-size="14">↗</text>
+  <rect x="636" y="299" width="60" height="14" rx="7" fill="#fef9c3"/>
+  <text x="666" y="310" fill="#92400e" font-size="9" text-anchor="middle">Improving</text>
+
+  <rect y="316" width="800" height="22" fill="#fff"/>
+  <text x="16" y="331" fill="#1e293b" font-size="10">Churn Rate (%)</text>
+  <text x="200" y="331" fill="#64748b" font-size="10">Product</text>
+  <text x="280" y="331" fill="#1e293b" font-size="10">&lt;2.0%</text>
+  <text x="360" y="331" fill="#1e293b" font-size="10">3.1%</text>
+  <text x="420" y="331" fill="#1e293b" font-size="10">2.8%</text>
+  <text x="480" y="331" fill="#1e293b" font-size="10">2.4%</text>
+  <text x="540" y="331" fill="#22c55e" font-size="14">↗</text>
+  <rect x="636" y="321" width="60" height="14" rx="7" fill="#fef9c3"/>
+  <text x="666" y="332" fill="#92400e" font-size="9" text-anchor="middle">At Risk</text>
+
+  <rect y="338" width="800" height="22" fill="#f8fafc"/>
+  <text x="16" y="353" fill="#1e293b" font-size="10">NPS Score</text>
+  <text x="200" y="353" fill="#64748b" font-size="10">Support</text>
+  <text x="280" y="353" fill="#1e293b" font-size="10">75</text>
+  <text x="360" y="353" fill="#1e293b" font-size="10">65</text>
+  <text x="420" y="353" fill="#1e293b" font-size="10">65</text>
+  <text x="480" y="353" fill="#1e293b" font-size="10">67</text>
+  <text x="540" y="353" fill="#f59e0b" font-size="14">→</text>
+  <rect x="636" y="343" width="60" height="14" rx="7" fill="#fee2e2"/>
+  <text x="666" y="354" fill="#dc2626" font-size="9" text-anchor="middle">Behind</text>
+
+  <rect y="374" width="800" height="46" fill="#0f172a"/>
+  <text x="20" y="393" fill="#94a3b8" font-size="10">QUARTERLY SCORECARD:  ✓ Revenue  ✓ CAC  ⚠ Churn  ✗ NPS  |  Overall: 2/4 KPIs on target</text>
+  <text x="16" y="413" fill="#475569" font-size="10">PromptCopy.io — KPI Metrics Tracker Template</text>
+</svg>

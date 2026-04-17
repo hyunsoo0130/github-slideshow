@@ -4,6 +4,7 @@ description: "Generate a weekly/monthly KPI tracking dashboard in Excel with spa
 tool: "claude"
 tags: ["kpi", "metrics", "dashboard", "excel", "reporting", "business"]
 date: "2026-04-05"
+image: "/images/prompts/excel-layout/kpi-metrics-tracker.svg"
 promptText: |
   Create a KPI metrics tracker dashboard for [TEAM/DEPARTMENT] at [COMPANY NAME].
   Reporting period: [WEEKLY/MONTHLY]. Key stakeholders: [WHO REVIEWS THIS].

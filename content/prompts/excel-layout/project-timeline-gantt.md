@@ -4,6 +4,7 @@ description: "Generate a Gantt chart spreadsheet layout with task rows, mileston
 tool: "claude"
 tags: ["gantt", "project", "timeline", "excel", "project management", "planner"]
 date: "2026-04-02"
+image: "/images/prompts/excel-layout/project-timeline-gantt.svg"
 promptText: |
   Create a Gantt chart spreadsheet for [PROJECT NAME] with [DURATION] timeline.
   Team size: [TEAM SIZE]. Start date: [START DATE].

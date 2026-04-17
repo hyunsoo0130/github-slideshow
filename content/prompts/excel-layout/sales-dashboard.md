@@ -4,6 +4,7 @@ description: "Generate a comprehensive sales dashboard in Excel with KPI tiles, 
 tool: "claude"
 tags: ["sales", "dashboard", "excel", "KPI", "performance", "business"]
 date: "2026-04-03"
+image: "/images/prompts/excel-layout/sales-dashboard.svg"
 promptText: |
   Create a sales performance dashboard spreadsheet for [COMPANY NAME], [PERIOD].
   Sales team size: [TEAM SIZE]. Currency: [CURRENCY].

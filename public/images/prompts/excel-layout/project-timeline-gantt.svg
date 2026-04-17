@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="420" fill="#f8fafc"/>
+  <rect width="800" height="46" fill="#0f766e"/>
+  <text x="20" y="28" fill="#fff" font-size="16" font-weight="bold">Project Timeline — Gantt Chart Q2 2026</text>
+  <text x="20" y="42" fill="#99f6e4" font-size="10">Project Alpha  |  8 Tasks  |  12 Weeks  |  Owner: Dev Team  |  Status: In Progress</text>
+
+  <!-- Header row -->
+  <rect y="46" width="800" height="28" fill="#134e4a"/>
+  <text x="16" y="64" fill="#5eead4" font-size="10" font-weight="bold">Task</text>
+  <text x="180" y="64" fill="#5eead4" font-size="10" font-weight="bold">Owner</text>
+  <text x="250" y="64" fill="#5eead4" font-size="10" font-weight="bold">Apr W1</text>
+  <text x="310" y="64" fill="#5eead4" font-size="10" font-weight="bold">Apr W2</text>
+  <text x="370" y="64" fill="#5eead4" font-size="10" font-weight="bold">Apr W3</text>
+  <text x="430" y="64" fill="#5eead4" font-size="10" font-weight="bold">Apr W4</text>
+  <text x="490" y="64" fill="#5eead4" font-size="10" font-weight="bold">May W1</text>
+  <text x="550" y="64" fill="#5eead4" font-size="10" font-weight="bold">May W2</text>
+  <text x="610" y="64" fill="#5eead4" font-size="10" font-weight="bold">May W3</text>
+  <text x="690" y="64" fill="#5eead4" font-size="10" font-weight="bold">Status</text>
+
+  <!-- Row 1 -->
+  <rect y="74" width="800" height="26" fill="#fff"/>
+  <text x="16" y="91" fill="#1e293b" font-size="10">📋 Requirements</text>
+  <text x="180" y="91" fill="#64748b" font-size="10">Alice</text>
+  <rect x="248" y="79" width="118" height="14" rx="4" fill="#0d9488"/>
+  <text x="307" y="90" fill="#fff" font-size="8" text-anchor="middle">✓ Done</text>
+  <rect x="688" y="79" width="60" height="14" rx="7" fill="#dcfce7"/>
+  <text x="718" y="90" fill="#15803d" font-size="8" text-anchor="middle">Done</text>
+
+  <!-- Row 2 -->
+  <rect y="100" width="800" height="26" fill="#f8fafc"/>
+  <text x="16" y="117" fill="#1e293b" font-size="10">🎨 UI Design</text>
+  <text x="180" y="117" fill="#64748b" font-size="10">Bob</text>
+  <rect x="308" y="105" width="118" height="14" rx="4" fill="#0d9488"/>
+  <text x="367" y="116" fill="#fff" font-size="8" text-anchor="middle">✓ Done</text>
+  <rect x="688" y="105" width="60" height="14" rx="7" fill="#dcfce7"/>
+  <text x="718" y="116" fill="#15803d" font-size="8" text-anchor="middle">Done</text>
+
+  <!-- Row 3 -->
+  <rect y="126" width="800" height="26" fill="#fff"/>
+  <text x="16" y="143" fill="#1e293b" font-size="10">⚙️ Backend API</text>
+  <text x="180" y="143" fill="#64748b" font-size="10">Charlie</text>
+  <rect x="368" y="131" width="178" height="14" rx="4" fill="#f59e0b"/>
+  <text x="457" y="142" fill="#fff" font-size="8" text-anchor="middle">▶ In Progress (65%)</text>
+  <rect x="688" y="131" width="60" height="14" rx="7" fill="#fef3c7"/>
+  <text x="718" y="142" fill="#92400e" font-size="8" text-anchor="middle">In Prog</text>
+
+  <!-- Row 4 -->
+  <rect y="152" width="800" height="26" fill="#f8fafc"/>
+  <text x="16" y="169" fill="#1e293b" font-size="10">🗄️ Database Setup</text>
+  <text x="180" y="169" fill="#64748b" font-size="10">Diana</text>
+  <rect x="368" y="157" width="118" height="14" rx="4" fill="#22c55e"/>
+  <text x="427" y="168" fill="#fff" font-size="8" text-anchor="middle">✓ Done</text>
+  <rect x="688" y="157" width="60" height="14" rx="7" fill="#dcfce7"/>
+  <text x="718" y="168" fill="#15803d" font-size="8" text-anchor="middle">Done</text>
+
+  <!-- Row 5 -->
+  <rect y="178" width="800" height="26" fill="#fff"/>
+  <text x="16" y="195" fill="#1e293b" font-size="10">🔗 Integration</text>
+  <text x="180" y="195" fill="#64748b" font-size="10">Charlie</text>
+  <rect x="488" y="183" width="118" height="14" rx="4" fill="#6366f1"/>
+  <text x="547" y="194" fill="#fff" font-size="8" text-anchor="middle">Scheduled</text>
+  <rect x="688" y="183" width="60" height="14" rx="7" fill="#e0e7ff"/>
+  <text x="718" y="194" fill="#4338ca" font-size="8" text-anchor="middle">Planned</text>
+
+  <!-- Row 6 -->
+  <rect y="204" width="800" height="26" fill="#f8fafc"/>
+  <text x="16" y="221" fill="#1e293b" font-size="10">🧪 QA Testing</text>
+  <text x="180" y="221" fill="#64748b" font-size="10">Eve</text>
+  <rect x="548" y="209" width="118" height="14" rx="4" fill="#6366f1"/>
+  <text x="607" y="220" fill="#fff" font-size="8" text-anchor="middle">Scheduled</text>
+  <rect x="688" y="209" width="60" height="14" rx="7" fill="#e0e7ff"/>
+  <text x="718" y="220" fill="#4338ca" font-size="8" text-anchor="middle">Planned</text>
+
+  <!-- Row 7 -->
+  <rect y="230" width="800" height="26" fill="#fff"/>
+  <text x="16" y="247" fill="#1e293b" font-size="10">🚀 Deployment</text>
+  <text x="180" y="247" fill="#64748b" font-size="10">Alice</text>
+  <rect x="608" y="235" width="58" height="14" rx="4" fill="#dc2626"/>
+  <text x="637" y="246" fill="#fff" font-size="8" text-anchor="middle">Pending</text>
+  <rect x="688" y="235" width="60" height="14" rx="7" fill="#fee2e2"/>
+  <text x="718" y="246" fill="#dc2626" font-size="8" text-anchor="middle">Pending</text>
+
+  <!-- Row 8 -->
+  <rect y="256" width="800" height="26" fill="#f8fafc"/>
+  <text x="16" y="273" fill="#1e293b" font-size="10">📊 Review &amp; Retro</text>
+  <text x="180" y="273" fill="#64748b" font-size="10">All</text>
+  <rect x="608" y="261" width="58" height="14" rx="4" fill="#94a3b8"/>
+  <text x="637" y="272" fill="#fff" font-size="8" text-anchor="middle">Pending</text>
+  <rect x="688" y="261" width="60" height="14" rx="7" fill="#f1f5f9"/>
+  <text x="718" y="272" fill="#475569" font-size="8" text-anchor="middle">Pending</text>
+
+  <!-- Today marker -->
+  <line x1="428" y1="46" x2="428" y2="282" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="410" y="46" width="36" height="14" rx="3" fill="#ef4444"/>
+  <text x="428" y="57" fill="#fff" font-size="8" text-anchor="middle">TODAY</text>
+
+  <!-- Summary section -->
+  <rect y="282" width="800" height="138" fill="#0f172a"/>
+  <text x="20" y="304" fill="#94a3b8" font-size="11" font-weight="bold">PROJECT SUMMARY</text>
+
+  <rect x="16" y="312" width="180" height="70" rx="6" fill="#1e293b"/>
+  <text x="106" y="332" fill="#94a3b8" font-size="9" text-anchor="middle">Completion</text>
+  <text x="106" y="358" fill="#4ade80" font-size="24" font-weight="bold" text-anchor="middle">52%</text>
+  <text x="106" y="374" fill="#22c55e" font-size="9" text-anchor="middle">3/8 tasks done</text>
+
+  <rect x="204" y="312" width="180" height="70" rx="6" fill="#1e293b"/>
+  <text x="294" y="332" fill="#94a3b8" font-size="9" text-anchor="middle">Days Remaining</text>
+  <text x="294" y="358" fill="#f1f5f9" font-size="24" font-weight="bold" text-anchor="middle">34</text>
+  <text x="294" y="374" fill="#94a3b8" font-size="9" text-anchor="middle">Deadline: May 21</text>
+
+  <rect x="392" y="312" width="180" height="70" rx="6" fill="#1e293b"/>
+  <text x="482" y="332" fill="#94a3b8" font-size="9" text-anchor="middle">Critical Path</text>
+  <text x="482" y="358" fill="#f59e0b" font-size="16" font-weight="bold" text-anchor="middle">Backend API</text>
+  <text x="482" y="374" fill="#f59e0b" font-size="9" text-anchor="middle">⚠ Risk: 5 days delay</text>
+
+  <rect x="580" y="312" width="204" height="70" rx="6" fill="#1e293b"/>
+  <text x="682" y="332" fill="#94a3b8" font-size="9" text-anchor="middle">Team Velocity</text>
+  <text x="682" y="358" fill="#34d399" font-size="24" font-weight="bold" text-anchor="middle">On Track</text>
+  <text x="682" y="374" fill="#94a3b8" font-size="9" text-anchor="middle">+2 days buffer</text>
+
+  <text x="16" y="413" fill="#475569" font-size="10">PromptCopy.io — Project Timeline Gantt Template</text>
+</svg>

@@ -4,6 +4,7 @@ description: "Generate a comprehensive inventory tracking spreadsheet with stock
 tool: "claude"
 tags: ["inventory", "stock", "excel", "retail", "warehouse", "management"]
 date: "2026-04-06"
+image: "/images/prompts/excel-layout/inventory-management.svg"
 promptText: |
   Create an inventory management spreadsheet for [BUSINESS NAME] — [BUSINESS TYPE].
   Product categories: [LIST MAIN CATEGORIES]. Currency: [CURRENCY].

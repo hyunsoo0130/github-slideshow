@@ -4,6 +4,7 @@ description: "Generate a comprehensive employee onboarding checklist spreadsheet
 tool: "claude"
 tags: ["hr", "onboarding", "checklist", "excel", "employee", "template"]
 date: "2026-04-04"
+image: "/images/prompts/excel-layout/employee-onboarding-checklist.svg"
 promptText: |
   Create an employee onboarding checklist spreadsheet for [COMPANY NAME].
   New hire role: [JOB TITLE]. Start date: [START DATE]. Department: [DEPARTMENT].

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="800" height="420" fill="#f8fafc"/>
+  <rect width="800" height="46" fill="#b45309"/>
+  <text x="20" y="28" fill="#fff" font-size="16" font-weight="bold">Inventory Management System — Apr 2026</text>
+  <text x="20" y="42" fill="#fde68a" font-size="10">Warehouse A  |  142 SKUs  |  Total Value: $284,320  |  Low Stock Alerts: 4</text>
+
+  <!-- KPI tiles -->
+  <rect y="46" width="800" height="76" fill="#78350f"/>
+  <rect x="12" y="54" width="180" height="60" rx="6" fill="#92400e"/>
+  <text x="102" y="74" fill="#fde68a" font-size="10" text-anchor="middle">Total SKUs</text>
+  <text x="102" y="98" fill="#fff" font-size="22" font-weight="bold" text-anchor="middle">142</text>
+  <text x="102" y="112" fill="#fbbf24" font-size="9" text-anchor="middle">▲ +8 this month</text>
+
+  <rect x="200" y="54" width="180" height="60" rx="6" fill="#92400e"/>
+  <text x="290" y="74" fill="#fde68a" font-size="10" text-anchor="middle">Total Value</text>
+  <text x="290" y="98" fill="#fff" font-size="22" font-weight="bold" text-anchor="middle">$284K</text>
+  <text x="290" y="112" fill="#fbbf24" font-size="9" text-anchor="middle">▲ +12.3% MoM</text>
+
+  <rect x="388" y="54" width="180" height="60" rx="6" fill="#92400e"/>
+  <text x="478" y="74" fill="#fde68a" font-size="10" text-anchor="middle">Low Stock Items</text>
+  <text x="478" y="98" fill="#f87171" font-size="22" font-weight="bold" text-anchor="middle">4</text>
+  <text x="478" y="112" fill="#fca5a5" font-size="9" text-anchor="middle">⚠ Reorder needed</text>
+
+  <rect x="576" y="54" width="212" height="60" rx="6" fill="#92400e"/>
+  <text x="682" y="74" fill="#fde68a" font-size="10" text-anchor="middle">Turnover Rate</text>
+  <text x="682" y="98" fill="#fff" font-size="22" font-weight="bold" text-anchor="middle">4.2x</text>
+  <text x="682" y="112" fill="#fbbf24" font-size="9" text-anchor="middle">▲ vs 3.8x last month</text>
+
+  <!-- Inventory table -->
+  <rect y="122" width="800" height="26" fill="#1e293b"/>
+  <text x="16" y="140" fill="#94a3b8" font-size="10" font-weight="bold">Product Name</text>
+  <text x="200" y="140" fill="#94a3b8" font-size="10" font-weight="bold">SKU</text>
+  <text x="270" y="140" fill="#94a3b8" font-size="10" font-weight="bold">Category</text>
+  <text x="360" y="140" fill="#94a3b8" font-size="10" font-weight="bold">Stock</text>
+  <text x="410" y="140" fill="#94a3b8" font-size="10" font-weight="bold">Min</text>
+  <text x="460" y="140" fill="#94a3b8" font-size="10" font-weight="bold">Unit Price</text>
+  <text x="540" y="140" fill="#94a3b8" font-size="10" font-weight="bold">Total Value</text>
+  <text x="650" y="140" fill="#94a3b8" font-size="10" font-weight="bold">Status</text>
+
+  <rect y="148" width="800" height="24" fill="#fff"/>
+  <text x="16" y="164" fill="#1e293b" font-size="10">Wireless Keyboard Pro</text>
+  <text x="200" y="164" fill="#64748b" font-size="10">WKB-001</text>
+  <text x="270" y="164" fill="#64748b" font-size="10">Electronics</text>
+  <text x="360" y="164" fill="#1e293b" font-size="10">243</text>
+  <text x="410" y="164" fill="#64748b" font-size="10">50</text>
+  <text x="460" y="164" fill="#1e293b" font-size="10">$89.99</text>
+  <text x="540" y="164" fill="#1e293b" font-size="10">$21,867</text>
+  <rect x="646" y="154" width="60" height="14" rx="7" fill="#dcfce7"/>
+  <text x="676" y="165" fill="#15803d" font-size="9" text-anchor="middle">Good</text>
+
+  <rect y="172" width="800" height="24" fill="#f8fafc"/>
+  <text x="16" y="188" fill="#1e293b" font-size="10">USB-C Hub 7-Port</text>
+  <text x="200" y="188" fill="#64748b" font-size="10">USB-042</text>
+  <text x="270" y="188" fill="#64748b" font-size="10">Electronics</text>
+  <text x="360" y="188" fill="#ef4444" font-size="10" font-weight="bold">18</text>
+  <text x="410" y="188" fill="#64748b" font-size="10">30</text>
+  <text x="460" y="188" fill="#1e293b" font-size="10">$49.99</text>
+  <text x="540" y="188" fill="#1e293b" font-size="10">$899</text>
+  <rect x="646" y="178" width="60" height="14" rx="7" fill="#fee2e2"/>
+  <text x="676" y="189" fill="#dc2626" font-size="9" text-anchor="middle">⚠ Low</text>
+
+  <rect y="196" width="800" height="24" fill="#fff"/>
+  <text x="16" y="212" fill="#1e293b" font-size="10">Office Chair Deluxe</text>
+  <text x="200" y="212" fill="#64748b" font-size="10">CHR-019</text>
+  <text x="270" y="212" fill="#64748b" font-size="10">Furniture</text>
+  <text x="360" y="212" fill="#1e293b" font-size="10">67</text>
+  <text x="410" y="212" fill="#64748b" font-size="10">20</text>
+  <text x="460" y="212" fill="#1e293b" font-size="10">$299.99</text>
+  <text x="540" y="212" fill="#1e293b" font-size="10">$20,099</text>
+  <rect x="646" y="202" width="60" height="14" rx="7" fill="#dcfce7"/>
+  <text x="676" y="213" fill="#15803d" font-size="9" text-anchor="middle">Good</text>
+
+  <rect y="220" width="800" height="24" fill="#f8fafc"/>
+  <text x="16" y="236" fill="#1e293b" font-size="10">HDMI Cable 4K 2m</text>
+  <text x="200" y="236" fill="#64748b" font-size="10">CBL-088</text>
+  <text x="270" y="236" fill="#64748b" font-size="10">Cables</text>
+  <text x="360" y="236" fill="#ef4444" font-size="10" font-weight="bold">12</text>
+  <text x="410" y="236" fill="#64748b" font-size="10">40</text>
+  <text x="460" y="236" fill="#1e293b" font-size="10">$14.99</text>
+  <text x="540" y="236" fill="#1e293b" font-size="10">$179</text>
+  <rect x="646" y="226" width="60" height="14" rx="7" fill="#fee2e2"/>
+  <text x="676" y="237" fill="#dc2626" font-size="9" text-anchor="middle">⚠ Low</text>
+
+  <rect y="244" width="800" height="24" fill="#fff"/>
+  <text x="16" y="260" fill="#1e293b" font-size="10">Monitor Stand Dual</text>
+  <text x="200" y="260" fill="#64748b" font-size="10">MSD-033</text>
+  <text x="270" y="260" fill="#64748b" font-size="10">Furniture</text>
+  <text x="360" y="260" fill="#f59e0b" font-size="10" font-weight="bold">31</text>
+  <text x="410" y="260" fill="#64748b" font-size="10">25</text>
+  <text x="460" y="260" fill="#1e293b" font-size="10">$124.99</text>
+  <text x="540" y="260" fill="#1e293b" font-size="10">$3,874</text>
+  <rect x="646" y="250" width="60" height="14" rx="7" fill="#fef3c7"/>
+  <text x="676" y="261" fill="#92400e" font-size="9" text-anchor="middle">Watch</text>
+
+  <!-- Summary section -->
+  <rect y="282" width="800" height="138" fill="#0f172a"/>
+  <text x="20" y="304" fill="#94a3b8" font-size="11" font-weight="bold">INVENTORY ANALYTICS</text>
+
+  <rect x="16" y="312" width="180" height="70" rx="6" fill="#1e293b"/>
+  <text x="106" y="332" fill="#94a3b8" font-size="9" text-anchor="middle">Reorder Alert</text>
+  <text x="106" y="358" fill="#f87171" font-size="24" font-weight="bold" text-anchor="middle">4 items</text>
+  <text x="106" y="374" fill="#fca5a5" font-size="9" text-anchor="middle">Immediate action needed</text>
+
+  <rect x="204" y="312" width="180" height="70" rx="6" fill="#1e293b"/>
+  <text x="294" y="332" fill="#94a3b8" font-size="9" text-anchor="middle">Top Category</text>
+  <text x="294" y="358" fill="#fbbf24" font-size="18" font-weight="bold" text-anchor="middle">Electronics</text>
+  <text x="294" y="374" fill="#94a3b8" font-size="9" text-anchor="middle">42% of total value</text>
+
+  <rect x="392" y="312" width="180" height="70" rx="6" fill="#1e293b"/>
+  <text x="482" y="332" fill="#94a3b8" font-size="9" text-anchor="middle">Avg Days in Stock</text>
+  <text x="482" y="358" fill="#f1f5f9" font-size="24" font-weight="bold" text-anchor="middle">28</text>
+  <text x="482" y="374" fill="#22c55e" font-size="9" text-anchor="middle">▼ 3 days faster</text>
+
+  <rect x="580" y="312" width="204" height="70" rx="6" fill="#1e293b"/>
+  <text x="682" y="332" fill="#94a3b8" font-size="9" text-anchor="middle">Monthly Orders</text>
+  <text x="682" y="358" fill="#34d399" font-size="24" font-weight="bold" text-anchor="middle">$48,200</text>
+  <text x="682" y="374" fill="#94a3b8" font-size="9" text-anchor="middle">Reorder cost estimate</text>
+
+  <text x="16" y="413" fill="#475569" font-size="10">PromptCopy.io — Inventory Management System Template</text>
+</svg>
