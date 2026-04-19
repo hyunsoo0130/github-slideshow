@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import CategoryCard from '@/components/CategoryCard';
 import PromptCard from '@/components/PromptCard';
 import AdUnit from '@/components/AdUnit';
+import HangulSearch from '@/components/HangulSearch';
 import { CATEGORIES, getAllPrompts } from '@/lib/data';
 import { ASCII_CATEGORIES } from '@/lib/ascii-data';
 
@@ -13,7 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const recentPrompts = getAllPrompts().slice(0, 8);
+  const allPrompts = getAllPrompts();
+  const recentPrompts = allPrompts.slice(0, 8);
+  const searchablePrompts = allPrompts.map(({ slug, title, description, tags, category }) => ({
+    slug, title, description, tags, category,
+  }));
 
   return (
     <div>
@@ -31,6 +36,9 @@ export default function HomePage() {
             Discover curated AI prompts for image generation and document design,
             plus a massive library of copy-paste ASCII symbols. All free, all instant.
           </p>
+          <div className="w-full mb-6">
+            <HangulSearch prompts={searchablePrompts} />
+          </div>
           <div className="flex flex-wrap gap-3 justify-center">
             <Link
               href="/category/image-generation"
