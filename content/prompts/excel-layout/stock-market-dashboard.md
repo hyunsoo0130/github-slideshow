@@ -6,21 +6,54 @@ tags: ["stocks", "finance", "google sheets", "GOOGLEFINANCE", "market", "investi
 date: "2026-04-10"
 image: "/images/prompts/excel-layout/stock-market-dashboard.svg"
 promptText: |
-  Create a Global Stock Market Dashboard for Google Sheets using GOOGLEFINANCE formulas
-  for live real-time data.
+  ╔══════════════════════════════════════════════════════╗
+  ║  IMPORTANT: GOOGLE SHEETS ONLY — NOT EXCEL          ║
+  ║  Step 1: Go to sheets.new in your browser           ║
+  ║  Step 2: Paste this prompt into Claude              ║
+  ║  Step 3: Follow Claude's instructions cell by cell  ║
+  ║  No API keys, no plugins, no setup — just works.    ║
+  ╚══════════════════════════════════════════════════════╝
 
-  NOTE: All price formulas use GOOGLEFINANCE() — Google Sheets only, no Excel.
+  Create a Global Stock Market Dashboard for Google Sheets with
+  GOOGLEFINANCE live data. Build ALL 7 sheets in this exact order.
 
-  SHEET 1: 🇺🇸 US MARKETS
+  ─────────────────────────────────────────────
+  SHEET 1 (Tab name "US Markets", tab color #1d4ed8): US MARKETS
+  ─────────────────────────────────────────────
 
-  MARKET INDICES (Rows 1–8):
-  A1: "US Market Indices" — bold header, dark blue background
-  A2: "Index" | B2: "Price" | C2: "Change" | D2: "Change %" | E2: "52W High" | F2: "52W Low"
-  A3: "S&P 500" | B3: =GOOGLEFINANCE("INDEXSP:.INX","price") | C3: =GOOGLEFINANCE("INDEXSP:.INX","change") | D3: =GOOGLEFINANCE("INDEXSP:.INX","changepct")/100 | ...
-  A4: "NASDAQ" | B4: =GOOGLEFINANCE("INDEXNASDAQ:.IXIC","price") | ...
-  A5: "Dow Jones" | B5: =GOOGLEFINANCE("INDEXDJX:.DJI","price") | ...
-  A6: "Russell 2000" | B6: =GOOGLEFINANCE("INDEXRUSSELL:RUT","price") | ...
-  A7: "VIX (Fear Index)" | B7: =GOOGLEFINANCE("INDEXCBOE:VIX","price") | ...
+  SECTION A — MAJOR INDICES (Rows 2–9), dark navy header:
+  Columns: A=Index | B=Price | C=Change | D=Change% | E=52W High | F=52W Low
+
+  Row 3: S&P 500       | =GOOGLEFINANCE("INDEXSP:.INX","price")      | =GOOGLEFINANCE("INDEXSP:.INX","change")      | =GOOGLEFINANCE("INDEXSP:.INX","changepct")/100
+  Row 4: NASDAQ Comp.  | =GOOGLEFINANCE("INDEXNASDAQ:.IXIC","price") | =GOOGLEFINANCE("INDEXNASDAQ:.IXIC","change") | =GOOGLEFINANCE("INDEXNASDAQ:.IXIC","changepct")/100
+  Row 5: Dow Jones     | =GOOGLEFINANCE("INDEXDJX:.DJI","price")     | =GOOGLEFINANCE("INDEXDJX:.DJI","change")     | =GOOGLEFINANCE("INDEXDJX:.DJI","changepct")/100
+  Row 6: Russell 2000  | =GOOGLEFINANCE("INDEXRUSSELL:RUT","price")  | ...
+  Row 7: VIX Fear Index| =GOOGLEFINANCE("INDEXCBOE:VIX","price")     | ...
+
+  Conditional formatting on Change% column: positive = green fill, negative = red fill
+
+  SECTION B — TECHNOLOGY SECTOR (light blue header, rows 11+):
+  Columns: A=Ticker | B=Company | C=Price | D=Change% | E=Mkt Cap
+  AAPL  | Apple     | =GOOGLEFINANCE("AAPL","price")  | =GOOGLEFINANCE("AAPL","changepct")/100
+  MSFT  | Microsoft | =GOOGLEFINANCE("MSFT","price")  | =GOOGLEFINANCE("MSFT","changepct")/100
+  NVDA  | NVIDIA    | =GOOGLEFINANCE("NVDA","price")  | =GOOGLEFINANCE("NVDA","changepct")/100
+  GOOGL | Alphabet  | =GOOGLEFINANCE("GOOGL","price") | =GOOGLEFINANCE("GOOGL","changepct")/100
+  META  | Meta      | =GOOGLEFINANCE("META","price")  | =GOOGLEFINANCE("META","changepct")/100
+  AMZN  | Amazon    | =GOOGLEFINANCE("AMZN","price")  | =GOOGLEFINANCE("AMZN","changepct")/100
+  TSLA  | Tesla     | =GOOGLEFINANCE("TSLA","price")  | =GOOGLEFINANCE("TSLA","changepct")/100
+
+  SECTION C — FINANCE SECTOR (light green header):
+  JPM   | JPMorgan Chase      | =GOOGLEFINANCE("JPM","price")   | ...
+  BAC   | Bank of America     | =GOOGLEFINANCE("BAC","price")   | ...
+  GS    | Goldman Sachs       | =GOOGLEFINANCE("GS","price")    | ...
+  V     | Visa                | =GOOGLEFINANCE("V","price")     | ...
+  BRK.B | Berkshire Hathaway  | =GOOGLEFINANCE("BRK.B","price") | ...
+
+  SECTION D — HEALTHCARE (light purple header):
+  JNJ  | Johnson & Johnson | =GOOGLEFINANCE("JNJ","price")  | ...
+  UNH  | UnitedHealth      | =GOOGLEFINANCE("UNH","price")  | ...
+  PFE  | Pfizer            | =GOOGLEFINANCE("PFE","price")  | ...
+  ABBV | AbbVie            | =GOOGLEFINANCE("ABBV","price") | ...
 
   CONDITIONAL FORMATTING (Change % column):
   Positive % → green fill (darker = more positive)
@@ -62,10 +95,12 @@ promptText: |
   COST | Costco | =GOOGLEFINANCE("COST","price") | ...
   MCD | McDonald's | =GOOGLEFINANCE("MCD","price") | ...
 
-  SECTOR SUMMARY TABLE:
-  Each sector's average daily change % — best and worst sector highlighted
+  SECTOR SUMMARY TABLE (bottom of sheet):
+  Each sector's average daily change % — best sector highlighted green, worst red
 
-  SHEET 2: 🇯🇵 JAPAN MARKETS
+  ─────────────────────────────────────────────
+  SHEET 2 (Tab "Japan", tab color #dc2626): JAPAN MARKETS
+  ─────────────────────────────────────────────
 
   INDICES:
   Nikkei 225: =GOOGLEFINANCE("INDEXNIKKEI:NI225","price")
@@ -89,7 +124,9 @@ promptText: |
   TYO:8306 | Mitsubishi UFJ | =GOOGLEFINANCE("TYO:8306","price") | ...
   TYO:8316 | Sumitomo Mitsui | ...
 
-  SHEET 3: 🇰🇷 KOREA MARKETS
+  ─────────────────────────────────────────────
+  SHEET 3 (Tab "Korea", tab color #0369a1): KOREA MARKETS
+  ─────────────────────────────────────────────
 
   INDICES:
   KOSPI: =GOOGLEFINANCE("KRX:KOSPI","price") [Note: limited GOOGLEFINANCE support]
@@ -108,7 +145,9 @@ promptText: |
   KRX:051910 | LG Chem
   KRX:000270 | Kia
 
-  SHEET 4: 🇨🇳 CHINA / HK MARKETS
+  ─────────────────────────────────────────────
+  SHEET 4 (Tab "China/HK", tab color #b91c1c): CHINA / HK MARKETS
+  ─────────────────────────────────────────────
 
   INDICES:
   Shanghai Composite: =GOOGLEFINANCE("SHA:000001","price")
@@ -128,52 +167,42 @@ promptText: |
   BIDU | Baidu | =GOOGLEFINANCE("BIDU","price") | ...
   NIO | NIO Inc | =GOOGLEFINANCE("NIO","price") | ...
 
-  SHEET 5: PORTFOLIO TRACKER
+  ─────────────────────────────────────────────
+  SHEET 5 (Tab "FX · Crypto · Commodities", tab color #7c3aed):
+  CURRENCIES, CRYPTO & COMMODITIES
+  ─────────────────────────────────────────────
 
-  ⚠️ TICKER FORMAT GUIDE — use GOOGLEFINANCE format, NOT Yahoo Finance format:
-  US stocks  → plain ticker, no prefix: GOOGL, TSLA, AAPL, JPM
-  Japan      → TYO: prefix: TYO:7203 (Toyota), TYO:9984 (SoftBank)
-  Hong Kong  → HKG: prefix: HKG:0700 (Tencent), HKG:9988 (Alibaba HK)
-  Korea      → KRX: prefix: KRX:005930 (Samsung), KRX:000660 (SK Hynix)
-              ❌ Do NOT use Yahoo Finance format (005930.KS) — it will NOT work in GOOGLEFINANCE
+  SECTION A — EXCHANGE RATES (vs USD, dark header):
+  Columns: A=Pair | B=Rate | C=Change% | D=Description
 
-  HEADER ROW (Row 1):
-  A1: "Ticker" | B1: "Market" | C1: "Company" | D1: "Shares" | E1: "Avg Buy Price"
-  F1: "Live Price" | G1: "Current Value" | H1: "Gain/Loss ($)" | I1: "Gain/Loss %" | J1: "% of Portfolio"
+  A3: USD/KRW | B3: =GOOGLEFINANCE("CURRENCY:USDKRW") | C3: (change %) | D3: "US Dollar → Korean Won"
+  A4: USD/JPY | B4: =GOOGLEFINANCE("CURRENCY:USDJPY") | C4: ...        | D4: "US Dollar → Japanese Yen"
+  A5: USD/CNY | B5: =GOOGLEFINANCE("CURRENCY:USDCNY") | C5: ...        | D5: "US Dollar → Chinese Yuan"
+  A6: USD/EUR | B6: =GOOGLEFINANCE("CURRENCY:USDEUR") | C6: ...        | D6: "US Dollar → Euro"
+  A7: USD/GBP | B7: =GOOGLEFINANCE("CURRENCY:USDGBP") | C7: ...        | D7: "US Dollar → British Pound"
+  A8: USD/HKD | B8: =GOOGLEFINANCE("CURRENCY:USDHKD") | C8: ...        | D8: "US Dollar → Hong Kong Dollar"
+  A9: EUR/KRW | B9: =GOOGLEFINANCE("CURRENCY:EURKRW") | C9: ...        | D9: "Euro → Korean Won"
 
-  EXAMPLE DATA (Rows 2–8):
-  A2: GOOGL   | B2: US | C2: Alphabet Inc        | D2: 3  | E2: $140
-  A3: TSLA    | B3: US | C3: Tesla Inc            | D3: 15 | E3: $220
-  A4: TYO:7203| B4: JP | C4: Toyota Motor         | D4: 20 | E4: ¥2500
-  A5: HKG:0700| B5: HK | C5: Tencent Holdings     | D5: 30 | E5: HK$300
-  A6: BABA    | B6: US | C6: Alibaba ADR (US)      | D6: 12 | E6: $85
-  A7: KRX:005930| B7: KR| C7: Samsung Electronics | D7: 5  | E7: ₩70000
-  A8: JPM     | B8: US | C8: JPMorgan Chase        | D8: 6  | E8: $190
+  SECTION B — CRYPTOCURRENCY (purple header):
+  A12: Bitcoin (BTC)  | B12: =GOOGLEFINANCE("CURRENCY:BTCUSD") | C12: change% | D12: "BTC/USD"
+  A13: Ethereum (ETH) | B13: =GOOGLEFINANCE("CURRENCY:ETHUSD") | C13: ...      | D13: "ETH/USD"
+  A14: Solana (SOL)   | B14: =GOOGLEFINANCE("CURRENCY:SOLUSD") | C14: ...      | D14: "SOL/USD"
+  A15: BNB            | B15: =GOOGLEFINANCE("CURRENCY:BNBUSD") | C15: ...      | D15: "BNB/USD"
 
-  FORMULAS — enter these in each row (replace 2 with the actual row number):
-  F2 (Live Price):    =IFERROR(GOOGLEFINANCE(A2,"price"),"—")
-  G2 (Current Value): =IFERROR(D2*F2,"—")
-  H2 (Gain/Loss $):   =IFERROR(G2-(D2*E2),"—")
-  I2 (Gain/Loss %):   =IFERROR((F2-E2)/E2,"—")  ← format as percentage
-  J2 (% of Portfolio):=IFERROR(G2/SUM($G$2:$G$50),"—")  ← format as percentage
+  SECTION C — COMMODITIES via ETF proxy (amber header):
+  Note: GOOGLEFINANCE does not support gold/silver spot prices directly.
+  Use ETF prices as real-time proxies — they track the underlying commodity closely.
 
-  Copy these formulas down for all rows (F2:J2 → drag down to F3:J3, F4:J4, etc.)
+  A18: Gold (via GLD ETF)   | B18: =GOOGLEFINANCE("GLD","price")  | C18: =GOOGLEFINANCE("GLD","changepct")/100  | D18: "SPDR Gold Trust — tracks gold price"
+  A19: Silver (via SLV ETF) | B19: =GOOGLEFINANCE("SLV","price")  | C19: =GOOGLEFINANCE("SLV","changepct")/100  | D19: "iShares Silver Trust — tracks silver"
+  A20: Oil (via USO ETF)    | B20: =GOOGLEFINANCE("USO","price")  | C20: =GOOGLEFINANCE("USO","changepct")/100  | D20: "US Oil Fund — tracks crude oil"
+  A21: Natural Gas (UNG)    | B21: =GOOGLEFINANCE("UNG","price")  | C21: ...                                    | D21: "US Natural Gas Fund"
 
-  TOTALS ROW (below last entry, e.g., Row 10):
-  "TOTAL INVESTED":       =SUMPRODUCT(D2:D9,E2:E9)
-  "TOTAL CURRENT VALUE":  =SUM(G2:G9)
-  "TOTAL GAIN/LOSS ($)":  =SUM(H2:H9)
-  "TOTAL RETURN %":       =(SUM(G2:G9)-SUMPRODUCT(D2:D9,E2:E9))/SUMPRODUCT(D2:D9,E2:E9)
+  Conditional formatting on all Change% columns: green if positive, red if negative.
 
-  CONDITIONAL FORMATTING:
-  H column (Gain/Loss $): positive → green fill | negative → red fill
-  I column (Gain/Loss %): >0 → green text | <0 → red text
-
-  PIE CHART: Select J column → Insert pie chart → "Portfolio Allocation by Stock"
-
-  Set up this dashboard with all 4 market sheets, sector color coding,
-  and conditional formatting for gains (green) and losses (red).
-  Make sure every Live Price cell has =IFERROR(GOOGLEFINANCE(ticker,"price"),"—") formula.
+  Set up this dashboard with all 5 sheets in order:
+  US Markets → Japan → Korea → China/HK → FX·Crypto·Commodities
+  Make sure every live price cell uses IFERROR to show "—" if data is unavailable.
 
   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   DESIGN & VISUAL FORMATTING STANDARDS
@@ -226,24 +255,24 @@ promptText: |
   ▸ Add a print area covering the main visible range
 
 usage: |
-  1. Open a new Google Sheets (GOOGLEFINANCE only works in Google Sheets)
-  2. Paste into Claude — Claude returns formula-by-formula setup instructions
-  3. Create 5 sheets: US / Japan / Korea / China / Portfolio
-  4. Enter GOOGLEFINANCE formulas exactly as instructed
-  5. Prices auto-refresh when you open the sheet (15–20 min delay per Google's feed)
-  6. Pin this tab in your browser — check markets any time
+  ⚡ QUICK START (takes 2 minutes):
+  1. Open sheets.new in Chrome (creates a blank Google Sheet instantly)
+  2. Copy this prompt → paste into Claude
+  3. Claude gives you cell-by-cell instructions — follow sheet by sheet
+  4. Prices load automatically — no API key, no login, no setup
 
-  Works in: Google Sheets ONLY
-  GOOGLEFINANCE data delay: ~15–20 minutes (free tier limitation)
-  Estimated setup time: 60–90 minutes for all 4 market sheets
+  Works in: Google Sheets ONLY (sheets.new)
+  ❌ Does NOT work in Excel — GOOGLEFINANCE is a Google-only function
+  Data delay: ~15–20 min (Google's free data feed limitation)
+  Estimated setup time: 60–90 min for all 6 sheets
 variables: |
-  No variables required — formulas are pre-set for major stocks in each market.
-  Optional: Add your own tickers to the Portfolio sheet
+  No variables required — all formulas are pre-built.
+  Just replace example tickers in the Portfolio sheet with your own holdings.
 tips: |
-  • Ask Claude to "add a cryptocurrency sheet with BTC, ETH, SOL live prices"
-  • Request "add a currency exchange rates sheet (USD/KRW, USD/JPY, USD/CNY, EUR/USD)"
-  • Add "create a stock screener tab filtering by P/E ratio and market cap"
-  • Ask Claude to "add a watchlist sheet where I can track stocks I'm researching"
-  • Request "add a sector rotation heatmap showing which sectors are leading/lagging"
-  • For portfolio: "add an annual dividend income calculator"
+  • Crypto prices: BTC, ETH, SOL already included in Sheet 6
+  • Exchange rates: USD/KRW, USD/JPY, EUR/USD and more in Sheet 6
+  • Gold & Silver: tracked via GLD and SLV ETF prices (very close to spot)
+  • Ask Claude to "add a watchlist sheet for stocks I'm researching"
+  • Ask Claude to "add a dividend tracker — annual income from my holdings"
+  • For Korean stocks showing — : enter the ticker in KRX:005930 format, not 005930.KS
 ---
